@@ -16,3 +16,6 @@ En mi caso he preferido dejar el contenido de la web en una carpeta "docs" para 
 Me estoy basando en la siguiente guía para personalizar la página.
 
 https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll 
+
+Aunque estoy teniendo problemas para configurarlo desde windows. 
+

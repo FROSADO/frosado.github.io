@@ -1,3 +1,7 @@
+---
+title: Instalando mi jardin digital
+---
+
 Por ahora lo que estoy haciendo es seguir la guia de github sobre como crear tu propio repositorio:
 https://docs.github.com/en/pages/quickstart
 

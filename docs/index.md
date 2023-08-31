@@ -9,7 +9,7 @@ Una vez creado el repositorio base y configurado para publicar solo hay que subi
 
 Para empezar con un simple hola mundo es suficiente. Esta es la estructura del primer proyecto. 
 
-![Pasted image 20230830183125.png](Pasted%20image%2020230830183125.png)
+![Estructura del proyecto](assets/Pasted%20image%2020230830183125.png)
 
 En mi caso he preferido dejar el contenido de la web en una carpeta "docs" para permitirme más flexibilidad al usar obsidian y Jekyll fuera de github. 
 

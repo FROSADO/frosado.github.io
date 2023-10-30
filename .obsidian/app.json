@@ -1,5 +1,10 @@
 {
   "alwaysUpdateLinks": true,
-  "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./assets"
+  "showUnsupportedFiles": false,
+  "attachmentFolderPath": "./assets",
+  "livePreview": false,
+  "showLineNumber": false,
+  "autoConvertHtml": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
 }

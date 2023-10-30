@@ -147,8 +147,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "342a736160e34218",
+  "active": "d25cae6cbf9fef4b",
   "lastOpenFiles": [
+    "index.md",
     "html/favicon.ico",
     "html/not_created.html",
     "html/obs.html/static/graphers/3d.js",
@@ -161,7 +162,6 @@
     "html/obs.html/static/search.svg",
     "html/obs.html/static/search.js",
     "html/obs.html/static/Roboto-Regular.ttf",
-    "html/obs.html/static/pako.js",
     "html/obs.html/static/hashtag.svg",
     "html/obs.html/static/graph.svg",
     "html/obs.html/static/dirtree.svg",

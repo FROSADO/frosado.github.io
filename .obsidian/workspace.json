@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Saludos.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Saludos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Saludos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Saludos.md"
               }
             }
           }
@@ -147,9 +147,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "d25cae6cbf9fef4b",
+  "active": "342a736160e34218",
   "lastOpenFiles": [
-    "index.md",
+    "README.md",
+    "Saludos.md",
     "_index.md",
     "html/favicon.ico",
     "html/not_created.html",
@@ -174,7 +175,6 @@
     "output/md/index.md",
     "output/md/assets/yomismo.png",
     "Index.md",
-    "README.md",
     "Prueba/Fichero de prueba - obsidianhtml.md",
     "about/About Me.md",
     "assets/yomismo.png",

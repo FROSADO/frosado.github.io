@@ -23,21 +23,30 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
+    name: Build and Push
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+        with:
+          ref: main
+          path: clone-path
+
+      - name: Install dependencies and run build
+        run: |
+          cd ${{ github.workspace }}
+          pip install --upgrade pip
+          pip install git+https://github.com/obsidian-html/obsidian-html
+          obsidianhtml convert -i clone-path/config.yaml -v
+          touch html/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
-          path: 'html'
+          path: 'clone-path/html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+

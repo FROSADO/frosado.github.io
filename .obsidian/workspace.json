@@ -150,6 +150,7 @@
   "active": "d25cae6cbf9fef4b",
   "lastOpenFiles": [
     "index.md",
+    "_index.md",
     "html/favicon.ico",
     "html/not_created.html",
     "html/obs.html/static/graphers/3d.js",
@@ -193,7 +194,6 @@
     "digital-garden-jekyll-template/_notes/your-first-note.md",
     "digital-garden-jekyll-template/_notes/move your body every day.md",
     "digital-garden-jekyll-template/_notes/consistency.md",
-    "digital-garden-jekyll-template/_notes/accents.md",
-    "blog/index.md"
+    "digital-garden-jekyll-template/_notes/accents.md"
   ]
 }

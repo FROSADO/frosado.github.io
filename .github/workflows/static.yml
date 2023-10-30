@@ -33,8 +33,10 @@ jobs:
       - name: Install dependencies and run build
         run: |
           cd ${{ github.workspace }}
+          ls -la
           pip install --upgrade pip
           pip install git+https://github.com/obsidian-html/obsidian-html
+          pwd
           obsidianhtml convert -v
           touch html/.nojekyll
       - name: Upload artifact

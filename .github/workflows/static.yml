@@ -1,3 +1,4 @@
+# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
@@ -34,7 +35,7 @@ jobs:
           cd ${{ github.workspace }}
           pip install --upgrade pip
           pip install git+https://github.com/obsidian-html/obsidian-html
-          obsidianhtml convert -i clone-path/config.yaml -v
+          obsidianhtml convert -i ${{ github.workspace }}/config.yaml -v
           touch html/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
@@ -44,3 +45,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+

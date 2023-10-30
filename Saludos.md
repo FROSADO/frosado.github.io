@@ -8,6 +8,6 @@ Mis proyectos en [Github](https://github.com/FROSADO)
 
 Empieza por [[README]]
 
-Un fichero de prueba : [Fichero de prueba - obsidianhtml](Prueba/Fichero%20de%20prueba%20-%20obsidianhtml.md)
+Un fichero de prueba : [index.md](Prueba/index.md.md)
 
 

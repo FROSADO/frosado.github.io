@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "16c61be6087095f0",
+        "id": "38b5ed5d714fd85d",
         "type": "tabs",
         "children": [
           {
-            "id": "d25cae6cbf9fef4b",
+            "id": "268dd087cf0e71a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Saludos.md",
+                "file": "assets/index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Saludos.md",
+                "file": "assets/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Saludos.md",
+                "file": "assets/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Saludos.md"
+                "file": "assets/index.md"
               }
             }
           }
@@ -147,53 +147,53 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "d25cae6cbf9fef4b",
+  "active": "268dd087cf0e71a5",
   "lastOpenFiles": [
     "README.md",
-    "about/About Me.md",
-    "Saludos.md",
-    "_index.md",
+    "assets/index.md",
+    "Prueba/index.md.md",
+    "Prueba/index.md",
     "html/favicon.ico",
     "html/not_created.html",
     "html/obs.html/static/graphers/3d.js",
     "html/obs.html/static/graphers/2d.js",
-    "html/obs.html/tags/index.html",
-    "html/obs.html/static/mermaid.css",
-    "html/obs.html/static/rss.svg",
-    "html/obs.html/static/SourceCodePro-Regular.ttf",
     "html/obs.html/static/taglist.css",
+    "html/obs.html/static/SourceCodePro-Regular.ttf",
     "html/obs.html/static/search.svg",
     "html/obs.html/static/search.js",
+    "html/obs.html/static/rss.svg",
     "html/obs.html/static/Roboto-Regular.ttf",
+    "html/obs.html/static/pako.js",
+    "html/obs.html/static/obsidian_core.js",
     "html/obs.html/static/hashtag.svg",
     "html/obs.html/static/graph.svg",
-    "html/obs.html/static/dirtree.svg",
     "html/obs.html/static/external.svg",
+    "html/obs.html/static/dirtree.svg",
     "html/assets/yomismo.png",
     "output/md/README.md",
-    "output/md/Prueba/Fichero de prueba - obsidianhtml.md",
+    "output/md/Prueba/index.md.md",
     "output/md/about/About Me.md",
     "output/md/index.md",
     "output/md/assets/yomismo.png",
-    "Index.md",
-    "Prueba/Fichero de prueba - obsidianhtml.md",
+    "output/md/assets/to_include.md",
+    "output/md/assets/index.md.md",
+    "output/md/Prueba/Fichero de prueba - obsidianhtml.md",
+    "output/md/assets/assets.md.md",
+    "output/md/output/md/output/md/Prueba/Fichero de prueba - obsidianhtml.md",
+    "output/md/output/md/output/md/assets/to_include.md",
+    "output/md/output/md/output/md/about/About Me.md",
+    "output/md/output/md/output/md/README.md",
+    "output/md/output/md/output/md/index.md",
+    "output/md/output/md/Prueba/Fichero de prueba - obsidianhtml.md",
+    "output/md/output/md/assets/assets.md.md",
+    "output/md/output/md/assets/to_include.md",
+    "output/md/output/md/about/About Me.md",
+    "output/md/output/md/README.md",
+    "output/md/output/md/index.md",
+    "assets/to_include.md",
+    "Saludos.md",
+    "about/About Me.md",
     "assets/yomismo.png",
-    "docs/_notes/Instalando mi jardín digital.md",
-    "docs/assets/image.jpg",
-    "docs/_pages/about.md",
-    "docs/_pages/index.md",
-    "docs/index.md",
-    "digital-garden-jekyll-template/_site/README.md",
-    "docs/404.md",
-    "digital-garden-jekyll-template/README.md",
-    "digital-garden-jekyll-template/_pages/index.md",
-    "digital-garden-jekyll-template/_pages/about.md",
-    "digital-garden-jekyll-template/_notes/animals/cats.md",
-    "digital-garden-jekyll-template/_notes/animals/tigers.md",
-    "digital-garden-jekyll-template/_notes/안녕하세요.md",
-    "digital-garden-jekyll-template/_notes/your-first-note.md",
-    "digital-garden-jekyll-template/_notes/move your body every day.md",
-    "digital-garden-jekyll-template/_notes/consistency.md",
-    "digital-garden-jekyll-template/_notes/accents.md"
+    "docs/assets/image.jpg"
   ]
 }

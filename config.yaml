@@ -1,3 +1,19 @@
 obsidian_entrypoint_path_str: './Saludos.md'
 obsidian_folder_path_str: '.'
 html_output_folder_path_str: './html/'
+site_name: El sitio de FROSADO
+html_custom_inclusions:
+  - '<link rel="stylesheet" href="/assets/custom.css" />'
+  - '<script src="/assets/custom.js"></script>'
+  
+toggles:
+  # If this is false only the entrypoint and all its links (recursively) are processed
+  # if true all the notes will be processed
+  process_all: true
+  features:
+    folder_notes:
+      enabled: True
+      placement: 'inside folder'   # 'inside folder' , 'outside folder' 
+      naming: 'index'   
+    breadcrumbs:
+      enabled: True

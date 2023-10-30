@@ -35,7 +35,7 @@ jobs:
           cd ${{ github.workspace }}
           pip install --upgrade pip
           pip install git+https://github.com/obsidian-html/obsidian-html
-          obsidianhtml convert -i ${{ github.workspace }}/config.yaml -v
+          obsidianhtml convert -v
           touch html/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

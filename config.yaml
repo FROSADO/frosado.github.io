@@ -9,11 +9,11 @@ html_custom_inclusions:
 toggles:
   # If this is false only the entrypoint and all its links (recursively) are processed
   # if true all the notes will be processed
-  process_all: true
+  process_all: false
   features:
     folder_notes:
       enabled: True
       placement: 'inside folder'   # 'inside folder' , 'outside folder' 
-      naming: 'index'   
+      naming: 'folder note'   
     breadcrumbs:
       enabled: True

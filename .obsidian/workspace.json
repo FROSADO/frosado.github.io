@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "assets/index.md",
+                "file": "raspberry/raspberry.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "301209a4664c1296",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Saludos.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 387.5
+    "width": 341.5
   },
   "right": {
     "id": "a8d46312c069d8dd",
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/index.md",
+                "file": "Saludos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/index.md",
+                "file": "Saludos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/index.md"
+                "file": "Saludos.md"
               }
             }
           }
@@ -139,20 +153,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo canvas": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "268dd087cf0e71a5",
+  "active": "301209a4664c1296",
   "lastOpenFiles": [
+    "Index.md",
+    "Saludos.md",
     "README.md",
+    "raspberry/raspberry.md",
+    "raspberry/Instalar docker en raspberryPi.md",
+    "Prueba/Prueba.md",
+    "raspberry",
     "assets/index.md",
     "Prueba/index.md.md",
-    "Prueba/index.md",
     "html/favicon.ico",
     "html/not_created.html",
     "html/obs.html/static/graphers/3d.js",
@@ -164,7 +183,6 @@
     "html/obs.html/static/rss.svg",
     "html/obs.html/static/Roboto-Regular.ttf",
     "html/obs.html/static/pako.js",
-    "html/obs.html/static/obsidian_core.js",
     "html/obs.html/static/hashtag.svg",
     "html/obs.html/static/graph.svg",
     "html/obs.html/static/external.svg",
@@ -189,10 +207,6 @@
     "output/md/output/md/assets/to_include.md",
     "output/md/output/md/about/About Me.md",
     "output/md/output/md/README.md",
-    "output/md/output/md/index.md",
-    "assets/to_include.md",
-    "Saludos.md",
-    "about/About Me.md",
     "assets/yomismo.png",
     "docs/assets/image.jpg"
   ]

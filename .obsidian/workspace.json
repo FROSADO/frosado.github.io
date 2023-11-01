@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raspberry/raspberry.md",
+                "file": "raspberrypi/raspberrypi.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prueba/Prueba.md",
+                "file": "Prueba/Prueba_note.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prueba/Prueba.md",
+                "file": "Prueba/Prueba_note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prueba/Prueba.md",
+                "file": "Prueba/Prueba_note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prueba/Prueba.md"
+                "file": "Prueba/Prueba_note.md"
               }
             }
           }
@@ -163,14 +163,15 @@
   },
   "active": "301209a4664c1296",
   "lastOpenFiles": [
-    "raspberry/raspberry.md",
     "Saludos.md",
-    "Prueba/Prueba.md",
-    "Index.md",
+    "Prueba/Prueba_note.md",
     "README.md",
-    "raspberry/Instalar docker en raspberryPi.md",
-    "raspberry",
     "assets/index.md",
+    "assets/to_include.md",
+    "raspberrypi/raspberrypi.md",
+    "raspberrypi/Instalar docker en raspberryPi.md",
+    "Index.md",
+    "raspberrypi",
     "Prueba/index.md.md",
     "html/favicon.ico",
     "html/not_created.html",
@@ -206,7 +207,6 @@
     "output/md/output/md/assets/assets.md.md",
     "output/md/output/md/assets/to_include.md",
     "output/md/output/md/about/About Me.md",
-    "output/md/output/md/README.md",
     "assets/yomismo.png",
     "docs/assets/image.jpg"
   ]

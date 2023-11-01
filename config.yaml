@@ -5,15 +5,60 @@ site_name: El sitio de FROSADO
 html_custom_inclusions:
   - '<link rel="stylesheet" href="/assets/custom.css" />'
   - '<script src="/assets/custom.js"></script>'
-  
+
 toggles:
   # If this is false only the entrypoint and all its links (recursively) are processed
   # if true all the notes will be processed
   process_all: false
   features:
+    add_toc: True
+    toc_pane: True
     folder_notes:
       enabled: True
       placement: 'inside folder'   # 'inside folder' , 'outside folder' 
       naming: 'folder note'   
     breadcrumbs:
       enabled: True
+    tags_page:
+      enabled: True
+      styling:
+        show_icon: True
+        show_in_note_footer: True
+    embedded_search:
+      enabled: True
+    preserve_inline_tags: True
+    rss:
+      enabled: True
+      host_root: 'https://frosado.github.io/'
+      styling: 
+        show_icon: True
+      channel: 
+        title: 'El sitio de notas de FROSADO'
+        website_link: 'https://frosado.github.io/'
+        description: 'El sitio de FROSADO'
+        language_code: 'es-ES'
+        managing_editor: 'n/a'
+        web_master: 'n/a'
+      items:
+        selector: 
+          match_keys: []
+          exclude_keys: []
+          include_subfolders: []
+          exclude_subfolders: ['.git','obs.html']
+          exclude_files: ['not_created.html', 'index.html']
+        description:
+          selectors:
+            - ['yaml','rss:description']
+            - ['first-paragraphs', 2, '<br/><br/>']
+            - ['first-header', 1]
+        title: 
+          selectors: 
+            - ['yaml','rss:title']
+            - ['first-header', 1]
+            - ['path', ['parent',1], '/ ', ['stem']]
+        publish_date: 
+          selectors: 
+            - ['yaml','rss:publish_date']
+            - ['yaml_strip','tags',['date/']]
+          iso_formatted: True
+          format_string: ''

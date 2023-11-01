@@ -19,22 +19,8 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "301209a4664c1296",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raspberrypi/raspberrypi.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,11 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "301209a4664c1296",
+  "active": "268dd087cf0e71a5",
   "lastOpenFiles": [
+    "Prueba/Prueba_note.md",
+    "raspberrypi/raspberrypi.md",
     "template.html",
     "raspberrypi/Instalar docker en raspberryPi.md",
-    "Prueba/Prueba_note.md",
     "html/obs.html/rss/feed.xml",
     "html/obs.html/static/graph.js",
     "html/obs.html/static/graphers/3d.js",
@@ -175,7 +162,6 @@
     "html/not_created.html",
     "html/obs.html/static/Roboto-Regular.ttf",
     "html/obs.html/static/SourceCodePro-Regular.ttf",
-    "html/obs.html/static/master.css",
     "html/obs.html/static/search.svg",
     "html/obs.html/static/graph.svg",
     "html/obs.html/static/dirtree.svg",
@@ -193,7 +179,6 @@
     "README.md",
     "assets/index.md",
     "assets/to_include.md",
-    "raspberrypi/raspberrypi.md",
     "Index.md",
     "Prueba/index.md.md",
     "output/md/README.md",

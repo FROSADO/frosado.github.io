@@ -11,7 +11,7 @@ toggles:
   # if true all the notes will be processed
   process_all: false
   features:
-    add_toc: True
+    # add_toc: True
     toc_pane: True
     folder_notes:
       enabled: True

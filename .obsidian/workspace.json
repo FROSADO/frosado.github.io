@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prueba/Prueba_note.md",
+                "file": "raspberrypi/raspberrypi.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prueba/Prueba_note.md",
+                "file": "raspberrypi/raspberrypi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prueba/Prueba_note.md",
+                "file": "raspberrypi/raspberrypi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prueba/Prueba_note.md"
+                "file": "raspberrypi/raspberrypi.md"
               }
             }
           }
@@ -163,6 +163,9 @@
   },
   "active": "301209a4664c1296",
   "lastOpenFiles": [
+    "template.html",
+    "raspberrypi/Instalar docker en raspberryPi.md",
+    "Prueba/Prueba_note.md",
     "html/obs.html/rss/feed.xml",
     "html/obs.html/static/graph.js",
     "html/obs.html/static/graphers/3d.js",
@@ -173,7 +176,6 @@
     "html/obs.html/static/Roboto-Regular.ttf",
     "html/obs.html/static/SourceCodePro-Regular.ttf",
     "html/obs.html/static/master.css",
-    "html/obs.html/static/load_dirtree_footer.js",
     "html/obs.html/static/search.svg",
     "html/obs.html/static/graph.svg",
     "html/obs.html/static/dirtree.svg",
@@ -188,12 +190,10 @@
     "output/md/index.md",
     "output/md/assets/yomismo.png",
     "Saludos.md",
-    "Prueba/Prueba_note.md",
     "README.md",
     "assets/index.md",
     "assets/to_include.md",
     "raspberrypi/raspberrypi.md",
-    "raspberrypi/Instalar docker en raspberryPi.md",
     "Index.md",
     "Prueba/index.md.md",
     "output/md/README.md",

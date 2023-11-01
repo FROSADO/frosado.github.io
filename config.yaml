@@ -11,8 +11,6 @@ toggles:
   # if true all the notes will be processed
   process_all: false
   features:
-    # add_toc: True
-    toc_pane: True
     folder_notes:
       enabled: True
       placement: 'inside folder'   # 'inside folder' , 'outside folder' 
@@ -26,7 +24,6 @@ toggles:
         show_in_note_footer: True
     embedded_search:
       enabled: True
-    preserve_inline_tags: True
     rss:
       enabled: True
       host_root: 'https://frosado.github.io/'

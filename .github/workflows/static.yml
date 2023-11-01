@@ -35,7 +35,7 @@ jobs:
           cd ${{ github.workspace }}
           ls -la
           pip install --upgrade pip
-          pip install git+https://github.com/obsidian-html/obsidian-html
+          pip install obsidianhtml==3.5.2
           pwd
           obsidianhtml convert -v
           touch html/.nojekyll
@@ -47,5 +47,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-      
 

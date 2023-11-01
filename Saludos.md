@@ -7,7 +7,7 @@ Mis proyectos en [Github](https://github.com/FROSADO)
 Empieza por [[README]]
 
 Voy a ir usando este sitio para ir dejando mis notas. 
-
+Temas : [raspberry](raspberry/raspberry.md)
 
 
 

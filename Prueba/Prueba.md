@@ -1,4 +1,8 @@
-# Pruebas
+---
+tags: pruebas
+---
+
+# 🧪- Página de Pruebas 🧪
 Esto es un fichero de pruebas a ver como funcionan las carpetas.
 
 ```console

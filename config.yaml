@@ -15,7 +15,7 @@ toggles:
     folder_notes:
       enabled: True
       placement: 'inside folder'   # 'inside folder' , 'outside folder' 
-      naming: 'folder note'   
+      naming: 'folder name'
     breadcrumbs:
       enabled: True
     tags_page:
@@ -60,3 +60,21 @@ toggles:
             - ['yaml_strip','tags',['date/']]
           iso_formatted: True
           format_string: ''
+    table_of_contents:
+      add_toc_when_missing: True          # add "[TOC]" (Table of Contents) when missing
+    create_index_from_dir_structure:
+      enabled: True
+      verbose: False
+      rel_output_path: 'dirtree.html'
+      styling: 
+        show_icon: True
+      exclude_subfolders:
+        - ".git"
+        - "resources"
+        - "**/snippets"
+      exclude_files:
+        - ".gitignore"
+        - "favicon.ico"
+        - "not_created.html"
+      homepage_label: "Home"
+    

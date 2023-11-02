@@ -1,3 +1,9 @@
+---
+tags:
+  - about
+  - index
+---
+
 Pagina sobre mi y quien soy yo.
 ![](assets/yomismo.png)
 

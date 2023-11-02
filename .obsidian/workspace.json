@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raspberrypi/raspberrypi.md",
+                "file": "about/About Me.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raspberrypi/raspberrypi.md",
+                "file": "about/About Me.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "raspberrypi/raspberrypi.md",
+                "file": "about/About Me.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raspberrypi/raspberrypi.md"
+                "file": "about/About Me.md"
               }
             }
           }
@@ -139,17 +139,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo canvas": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "268dd087cf0e71a5",
   "lastOpenFiles": [
-    "Prueba/Prueba_note.md",
+    "Saludos.md",
+    "about/About Me.md",
+    "Prueba/Prueba.md",
     "raspberrypi/raspberrypi.md",
     "template.html",
     "raspberrypi/Instalar docker en raspberryPi.md",
@@ -175,7 +177,6 @@
     "output/md/about/About Me.md",
     "output/md/index.md",
     "output/md/assets/yomismo.png",
-    "Saludos.md",
     "README.md",
     "assets/index.md",
     "assets/to_include.md",

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Compile",
+    "path": "C:\\tools\\obsidianhtml\\build.bat",
+    "showOnBottomBar": true,
+    "icon": "🚀",
+    "showExitCode": true
+  }
+]

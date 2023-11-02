@@ -18,5 +18,5 @@ Mis proyectos en [Github](https://github.com/FROSADO)
 Voy a ir usando este sitio para ir dejando mis notas. 
 Temas : 
 - [raspberrypi](raspberrypi/raspberrypi.md)
-- [Pruebas varias](Prueba/Prueba_note.md)
+- [Pruebas varias](Prueba/Prueba.md)
 

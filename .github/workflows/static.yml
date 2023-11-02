@@ -39,7 +39,8 @@ jobs:
           pwd
           obsidianhtml convert -v
           touch html/.nojekyll
-          mv assets/* html/assets/
+          mkdir -p html/resources/
+          mv resources/* html/resources/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

@@ -5,7 +5,7 @@ tags: index
 # Saludos
 
 >[!note]+ Yo mismo
-> ![[assets/yomismo.png|100]]
+> ![[resources/yomismo.png|100]]
 > 
 
 Pagina sobre mi y quien soy yo. [About Me](about/About%20Me.md)

@@ -5,7 +5,7 @@ tags:
 ---
 
 Pagina sobre mi y quien soy yo.
-![](assets/yomismo.png)
+![](../resources/yomismo.png)
 
 
 Algunos enlaces sobre mi : 

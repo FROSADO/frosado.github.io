@@ -4,19 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "646651fbff365ba9",
+        "id": "5987a9ee14fb3fd4",
         "type": "tabs",
         "children": [
           {
-            "id": "b611ed23445faafc",
+            "id": "bb75f2a7fb10a6ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/About Me.md",
-                "mode": "source",
+                "file": "Linux/Como trabajar con LVM.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
+              }
+            }
+          },
+          {
+            "id": "eca68088eed68a13",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "resources/lvm-esquema.excalidraw.md"
               }
             }
           }
@@ -86,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about/About Me.md",
+                "file": "Linux/Como trabajar con LVM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about/About Me.md",
+                "file": "Linux/Como trabajar con LVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about/About Me.md"
+                "file": "Linux/Como trabajar con LVM.md"
               }
             }
           }
@@ -134,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -144,56 +153,56 @@
       "canvas:Crear nuevo canvas": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "342a736160e34218",
+  "active": "bb75f2a7fb10a6ba",
   "lastOpenFiles": [
+    "resources/lvm-esquema-en-banda.md",
+    "resources/lvm-esquema-en-banda.png",
+    "resources/lvm-esquema-en-banda.svg",
+    "resources/lvm-esquema.excalidraw.md",
+    "resources/lvm-esquema-linear.md",
+    "Linux/Como trabajar con LVM.md",
+    "resources/lvm-esquema-linear.png",
+    "resources/lvm-esquema-linear.svg",
     "html/obs.html/rss/feed.xml",
     "html/obs.html/static/graph.js",
-    "html/obs.html/static/graphers/3d.js",
     "html/obs.html/static/graphers/2d.js",
+    "html/obs.html/static/graphers/3d.js",
     "html/obs.html/static/graphers",
     "html/favicon.ico",
     "html/not_created.html",
     "html/obs.html/static/Roboto-Regular.ttf",
     "html/obs.html/static/SourceCodePro-Regular.ttf",
     "html/obs.html/static/master.css",
-    "html/obs.html/static/load_dirtree_footer.js",
     "html/obs.html/static/search.svg",
     "html/obs.html/static/rss.svg",
     "html/obs.html/static/hashtag.svg",
     "html/obs.html/static/graph.svg",
     "html/obs.html/static/external.svg",
     "html/obs.html/static/dirtree.svg",
-    "html/resources/yomismo.png",
+    "output/md/Linux/Linux.md",
+    "output/md/Linux/Como trabajar con LVM.md",
     "output/md/Prueba/Prueba.md",
     "output/md/raspberrypi/raspberrypi.md",
     "output/md/raspberrypi/Instalar docker en raspberryPi.md",
     "output/md/about/About Me.md",
     "output/md/index.md",
-    "output/md/resources/yomismo.png",
-    "resources/yomismo.png",
-    "about/About Me.md",
+    "resources/Drawing 2023-11-02 19.01.55.excalidraw.md",
+    "Linux/Linux.md",
     "Saludos.md",
+    "about/About Me.md",
     "Prueba/Prueba.md",
     "raspberrypi/raspberrypi.md",
     "raspberrypi/Instalar docker en raspberryPi.md",
-    "html/assets/yomismo.png",
     "output/md/Prueba/Prueba_note.md",
     "README.md",
     "assets/index.md",
     "assets/to_include.md",
     "Index.md",
     "Prueba/index.md.md",
-    "output/md/README.md",
-    "output/md/Prueba/index.md.md",
-    "output/md/assets/to_include.md",
-    "output/md/assets/index.md.md",
-    "output/md/Prueba/Fichero de prueba - obsidianhtml.md",
-    "output/md/assets/assets.md.md",
-    "output/md/output/md/output/md/Prueba/Fichero de prueba - obsidianhtml.md",
-    "output/md/output/md/output/md/assets/to_include.md",
-    "output/md/output/md/output/md/about/About Me.md"
+    "output/md/README.md"
   ]
 }

@@ -225,7 +225,7 @@ Logical volume "lvData" created.
 ```
 
 Formatear el Volumen Lógico con ext4 o xfs:
-```
+```console
 # mkfs -t ext4 /dev/vgDataName/lvData
 mke2fs 1.42.9 (28-Dec-2013)
 Discarding device blocks: done
@@ -263,7 +263,7 @@ Obviaremos el proceso para incrementar el tamaño del disco o añadir un disco e
 
 En el siguiente ejemplo podemos ver como esta el sistema antes del incremento de tamaño.
 
-```
+```console
 # lsblk
 NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda                       8:0    0   50G  0 disk
@@ -278,7 +278,7 @@ sdb                       8:16   0    4T  0 disk
 
 Una vez incrementado el tamaño del disco (en este ejemplo de 4Tb a 5Tb)
 
-```
+```console
 
 # lsblk
 NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -371,7 +371,7 @@ Ahora el resultado queda como esperamos, pero es necesario extender el sistema d
 
 En este caso se usa xfs :
 
-```
+```console
 # lsblk
 NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda                       8:0    0   50G  0 disk
@@ -398,7 +398,7 @@ data blocks changed from 1073729536 to 1342176256
 
 El tamaño se muestra correctamente.
 
-```
+```console
  
 # df -h
 Filesystem                       Size  Used Avail Use% Mounted on
@@ -415,7 +415,7 @@ tmpfs                            380M     0  380M   0% /run/user/1335757945
 ### Añadir un disco extra al grupo de volumenes
 Asumimos que ya tienes el disco nuevo disponible. Este aparece listado como uno nuevo (vdc):
 
-```
+```console
 
 # lsblk
 NAME                       MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT

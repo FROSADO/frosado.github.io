@@ -4,16 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5987a9ee14fb3fd4",
+        "id": "85325f12bf407829",
         "type": "tabs",
         "children": [
           {
-            "id": "eca68088eed68a13",
+            "id": "16ed44ae677bc819",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "resources/lvm-esquema.excalidraw.md"
+                "file": "Linux/Como trabajar con LVM.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
               }
             }
           }
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resources/lvm-esquema.excalidraw.md",
+                "file": "Linux/Como trabajar con LVM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resources/lvm-esquema.excalidraw.md",
+                "file": "Linux/Como trabajar con LVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resources/lvm-esquema.excalidraw.md"
+                "file": "Linux/Como trabajar con LVM.md"
               }
             }
           }
@@ -144,13 +147,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "eca68088eed68a13",
+  "active": "16ed44ae677bc819",
   "lastOpenFiles": [
+    "Saludos.md",
     "Linux/Como trabajar con LVM.md",
+    "Linux/Linux.md",
+    "Linux/assets/Pasted image 20231102182825.png",
+    "resources/lvm-esquema.excalidraw.md",
     "resources/lvm-esquema-en-banda.md",
     "resources/lvm-esquema-en-banda.png",
     "resources/lvm-esquema-en-banda.svg",
-    "resources/lvm-esquema.excalidraw.md",
     "resources/lvm-esquema-linear.md",
     "resources/lvm-esquema-linear.png",
     "resources/lvm-esquema-linear.svg",
@@ -169,7 +175,6 @@
     "html/obs.html/static/hashtag.svg",
     "html/obs.html/static/graph.svg",
     "html/obs.html/static/external.svg",
-    "html/obs.html/static/dirtree.svg",
     "output/md/Linux/Linux.md",
     "output/md/Linux/Como trabajar con LVM.md",
     "output/md/Prueba/Prueba.md",
@@ -178,8 +183,6 @@
     "output/md/about/About Me.md",
     "output/md/index.md",
     "resources/Drawing 2023-11-02 19.01.55.excalidraw.md",
-    "Linux/Linux.md",
-    "Saludos.md",
     "about/About Me.md",
     "Prueba/Prueba.md",
     "raspberrypi/raspberrypi.md",

@@ -2,6 +2,7 @@
 tags: linux
 
 ---
+# Introducción
 
 El sistema de administración de volúmenes lógicos (LVM) es una herramienta fundamental para la gestión de almacenamiento que permite la asignación de discos, el almacenamiento _"en banda"_ , franjas (striping), la duplicación (mirroring) y el redimensionamiento de volúmenes lógicos. 
 
@@ -412,7 +413,7 @@ tmpfs                            1.9G     0  1.9G   0% /sys/fs/cgroup
 tmpfs                            380M     0  380M   0% /run/user/1335757945
 ```
 
-### Añadir un disco extra al grupo de volumenes
+## Añadir un disco extra al grupo de volumenes
 Asumimos que ya tienes el disco nuevo disponible. Este aparece listado como uno nuevo (vdc):
 
 ```console

@@ -4,23 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "85325f12bf407829",
+        "id": "82917125a4bfe0b2",
         "type": "tabs",
         "children": [
           {
-            "id": "16ed44ae677bc819",
+            "id": "82fd56f3fb19648c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5cd62aeee091132a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Como trabajar con LVM.md",
-                "mode": "preview",
+                "file": "Prueba/Prueba.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Como trabajar con LVM.md",
+                "file": "Prueba/Prueba.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Como trabajar con LVM.md",
+                "file": "Prueba/Prueba.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Como trabajar con LVM.md"
+                "file": "Prueba/Prueba.md"
               }
             }
           }
@@ -134,23 +143,42 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo canvas": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "16ed44ae677bc819",
+  "active": "5cd62aeee091132a",
   "lastOpenFiles": [
-    "Saludos.md",
+    "Prueba/Prueba Obsidianhml.md",
+    "Prueba/Prueba.md",
+    "Prueba/Prueba con el video1.md",
+    "resources/video1/Video_1.worker.js",
+    "resources/video1/Video_1.wasm",
+    "resources/video1/Video_1.png.import",
+    "resources/video1/Video_1.png",
+    "resources/video1/Video_1.pck",
+    "resources/video1/Video_1.js",
+    "resources/video1/Video_1.icon.png.import",
+    "resources/video1/Video_1.icon.png",
+    "resources/video1/Video_1.html",
+    "resources/video1/Video_1.audio.worklet.js",
+    "resources/video1/Video_1.apple-touch-icon.png.import",
+    "resources/video1/Video_1.apple-touch-icon.png",
+    "resources/video1",
+    "Shaders en Godot.md",
+    "assets/Pasted image 20231108221809.png",
     "Linux/Como trabajar con LVM.md",
+    "Saludos.md",
     "Linux/Linux.md",
     "Linux/assets/Pasted image 20231102182825.png",
     "resources/lvm-esquema.excalidraw.md",
@@ -160,21 +188,7 @@
     "resources/lvm-esquema-linear.md",
     "resources/lvm-esquema-linear.png",
     "resources/lvm-esquema-linear.svg",
-    "html/obs.html/rss/feed.xml",
-    "html/obs.html/static/graph.js",
-    "html/obs.html/static/graphers/2d.js",
-    "html/obs.html/static/graphers/3d.js",
-    "html/obs.html/static/graphers",
-    "html/favicon.ico",
-    "html/not_created.html",
-    "html/obs.html/static/Roboto-Regular.ttf",
-    "html/obs.html/static/SourceCodePro-Regular.ttf",
-    "html/obs.html/static/master.css",
     "html/obs.html/static/search.svg",
-    "html/obs.html/static/rss.svg",
-    "html/obs.html/static/hashtag.svg",
-    "html/obs.html/static/graph.svg",
-    "html/obs.html/static/external.svg",
     "output/md/Linux/Linux.md",
     "output/md/Linux/Como trabajar con LVM.md",
     "output/md/Prueba/Prueba.md",
@@ -184,15 +198,12 @@
     "output/md/index.md",
     "resources/Drawing 2023-11-02 19.01.55.excalidraw.md",
     "about/About Me.md",
-    "Prueba/Prueba.md",
     "raspberrypi/raspberrypi.md",
     "raspberrypi/Instalar docker en raspberryPi.md",
     "output/md/Prueba/Prueba_note.md",
     "README.md",
     "assets/index.md",
     "assets/to_include.md",
-    "Index.md",
-    "Prueba/index.md.md",
-    "output/md/README.md"
+    "Index.md"
   ]
 }

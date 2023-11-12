@@ -26,7 +26,7 @@ toggles:
     embedded_search:
       enabled: True
     rss:
-      enabled: True
+      enabled: False
       host_root: 'https://frosado.github.io/'
       styling: 
         show_icon: True

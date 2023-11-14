@@ -11,8 +11,13 @@
             "id": "dd896f9186431951",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Saludos.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Saludos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Saludos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Saludos.md"
+              }
             }
           }
         ]
@@ -140,6 +149,16 @@
   },
   "active": "dd896f9186431951",
   "lastOpenFiles": [
+    "Shaders en Godot.md",
+    "docs/assets/Pasted image 20230830183125.png",
+    "docs/assets",
+    "docs/index.md",
+    "docs",
+    "blog/index.md",
+    "blog",
+    "Saludos.md",
+    "_config.yml",
+    "index.md",
     "Prueba/Prueba.md",
     "raspberrypi/Instalar docker en raspberryPi.md",
     "raspberrypi/raspberrypi.md",
@@ -157,23 +176,16 @@
     "html/resources/lvm-esquema.excalidraw.md",
     "html/resources/video1/Video_1.pck",
     "html/resources/video1/Video_1.icon.png.import",
-    "html/resources/video1/Video_1.audio.worklet.js",
-    "html/resources/video1/Video_1.worker.js",
-    "html/resources/video1/Video_1.wasm",
-    "html/resources/video1/Video_1.png.import",
     "html/resources/video1/Video_1.png",
     "html/resources/video1/Video_1.icon.png",
     "html/resources/video1/Video_1.apple-touch-icon.png",
     "html/resources/lvm-esquema.excalidraw.png",
     "html/resources/resources/lvm-esquema-linear.svg",
-    "html/resources/resources/lvm-esquema-en-banda.svg",
     "html/resources/resources/lvm-esquema-linear.md",
     "html/resources/resources/lvm-esquema-en-banda.md",
     "html/resources/resources/lvm-esquema.excalidraw.md",
-    "Shaders en Godot.md",
     "Linux/Como trabajar con LVM.md",
     "Linux/Linux.md",
-    "Saludos.md",
     "resources/lvm-esquema.excalidraw.md",
     "resources/lvm-esquema-en-banda.md",
     "resources/lvm-esquema-linear.md",
@@ -181,10 +193,6 @@
     "output/md/Linux/Como trabajar con LVM.md",
     "output/md/Prueba/Prueba.md",
     "output/md/raspberrypi/raspberrypi.md",
-    "output/md/raspberrypi/Instalar docker en raspberryPi.md",
-    "output/md/about/About Me.md",
-    "output/md/index.md",
-    "resources/Drawing 2023-11-02 19.01.55.excalidraw.md",
-    "about/About Me.md"
+    "output/md/raspberrypi/Instalar docker en raspberryPi.md"
   ]
 }

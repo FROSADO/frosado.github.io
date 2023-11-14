@@ -39,7 +39,7 @@ jobs:
           pwd
           obsidianhtml convert -v
           touch html/.nojekyll
-          mv resources html/resources
+          cp --force -r --update --link resources html/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

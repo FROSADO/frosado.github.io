@@ -147,5 +147,3 @@ Future task               :         des3, after des2, 5d
 Future task2               :         des4, after des3, 5d
 ```
 
-# Otros enlaces 
-[Prueba con el video1](Prueba%20con%20el%20video1.md)

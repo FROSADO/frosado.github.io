@@ -4,32 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "82917125a4bfe0b2",
+        "id": "567bdf3b1df5f2c3",
         "type": "tabs",
         "children": [
           {
-            "id": "82fd56f3fb19648c",
+            "id": "dd896f9186431951",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "5cd62aeee091132a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prueba/Prueba.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prueba/Prueba.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prueba/Prueba.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,61 +118,65 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Prueba/Prueba.md"
-              }
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo canvas": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5cd62aeee091132a",
+  "active": "dd896f9186431951",
   "lastOpenFiles": [
-    "Prueba/Prueba Obsidianhml.md",
     "Prueba/Prueba.md",
+    "raspberrypi/Instalar docker en raspberryPi.md",
+    "raspberrypi/raspberrypi.md",
     "Prueba/Prueba con el video1.md",
-    "resources/video1/Video_1.worker.js",
-    "resources/video1/Video_1.wasm",
-    "resources/video1/Video_1.png.import",
-    "resources/video1/Video_1.png",
-    "resources/video1/Video_1.pck",
-    "resources/video1/Video_1.js",
-    "resources/video1/Video_1.icon.png.import",
-    "resources/video1/Video_1.icon.png",
-    "resources/video1/Video_1.html",
-    "resources/video1/Video_1.audio.worklet.js",
-    "resources/video1/Video_1.apple-touch-icon.png.import",
-    "resources/video1/Video_1.apple-touch-icon.png",
-    "resources/video1",
+    "html/resources/lvm-esquema-linear.svg",
+    "html/resources/lvm-esquema-en-banda.svg",
+    "html/resources/lvm-esquema-linear.png",
+    "html/resources/lvm-esquema-linear.md",
+    "html/resources/lvm-esquema-en-banda.md",
+    "html/resources/CuFKN7pG",
+    "html/resources/custom.js",
+    "html/resources/lvm-esquema-en-banda.png",
+    "html/resources/assets",
+    "html/resources/custom.css",
+    "html/resources/lvm-esquema.excalidraw.md",
+    "html/resources/video1/Video_1.pck",
+    "html/resources/video1/Video_1.icon.png.import",
+    "html/resources/video1/Video_1.audio.worklet.js",
+    "html/resources/video1/Video_1.worker.js",
+    "html/resources/video1/Video_1.wasm",
+    "html/resources/video1/Video_1.png.import",
+    "html/resources/video1/Video_1.png",
+    "html/resources/video1/Video_1.icon.png",
+    "html/resources/video1/Video_1.apple-touch-icon.png",
+    "html/resources/lvm-esquema.excalidraw.png",
+    "html/resources/resources/lvm-esquema-linear.svg",
+    "html/resources/resources/lvm-esquema-en-banda.svg",
+    "html/resources/resources/lvm-esquema-linear.md",
+    "html/resources/resources/lvm-esquema-en-banda.md",
+    "html/resources/resources/lvm-esquema.excalidraw.md",
     "Shaders en Godot.md",
-    "assets/Pasted image 20231108221809.png",
     "Linux/Como trabajar con LVM.md",
-    "Saludos.md",
     "Linux/Linux.md",
-    "Linux/assets/Pasted image 20231102182825.png",
+    "Saludos.md",
     "resources/lvm-esquema.excalidraw.md",
     "resources/lvm-esquema-en-banda.md",
-    "resources/lvm-esquema-en-banda.png",
-    "resources/lvm-esquema-en-banda.svg",
     "resources/lvm-esquema-linear.md",
-    "resources/lvm-esquema-linear.png",
-    "resources/lvm-esquema-linear.svg",
-    "html/obs.html/static/search.svg",
     "output/md/Linux/Linux.md",
     "output/md/Linux/Como trabajar con LVM.md",
     "output/md/Prueba/Prueba.md",
@@ -197,13 +185,6 @@
     "output/md/about/About Me.md",
     "output/md/index.md",
     "resources/Drawing 2023-11-02 19.01.55.excalidraw.md",
-    "about/About Me.md",
-    "raspberrypi/raspberrypi.md",
-    "raspberrypi/Instalar docker en raspberryPi.md",
-    "output/md/Prueba/Prueba_note.md",
-    "README.md",
-    "assets/index.md",
-    "assets/to_include.md",
-    "Index.md"
+    "about/About Me.md"
   ]
 }

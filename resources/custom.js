@@ -1,4 +1,6 @@
 // custom.js
+document.getElementById('antiflash').style.display = 'block';
+
 
 function handle_toggle_side_bar(e) {
     let header;

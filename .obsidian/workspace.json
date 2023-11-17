@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Godot/Godot Engine - Desarrollo de videojuegos.md",
+                "file": "Saludos.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Godot/Godot Engine - Desarrollo de videojuegos.md",
+                "file": "Saludos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Godot/Godot Engine - Desarrollo de videojuegos.md",
+                "file": "Saludos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Godot/Godot Engine - Desarrollo de videojuegos.md"
+                "file": "Saludos.md"
               }
             }
           }
@@ -147,10 +147,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "342a736160e34218",
+  "active": "d6990b69384f6fc0",
   "lastOpenFiles": [
-    "Godot/Shaders en Godot.md",
     "Godot/Godot Engine - Desarrollo de videojuegos.md",
+    "Godot/Shaders en Godot.md",
     "resources/godot_vector4_input_visual.png",
     "Godot/assets/the_boy.png",
     "Godot/assets/Pasted image 20231117141219.png.0.pdnSave",

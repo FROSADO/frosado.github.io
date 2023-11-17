@@ -1,6 +1,8 @@
 ---
-tags: raspberrypi
-
+tags:
+  - raspberrypi
+  - docker
+  - linux
 ---
 
 Vamos a proceder a installar docker en raspberryPI. El procedimiento en modo vagos es tan simple como. 

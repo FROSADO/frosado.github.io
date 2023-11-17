@@ -1,13 +1,21 @@
-Después de  [haber Instalado docker en raspberryPi](Instalar%20docker%20en%20raspberryPi.md) y comprobar que todo funciona, vamos a configurar la raspberrypi para que sirva de servidor de minecraft.
+---
+tags:
+  - raspberrypi
+  - minecraft
+  - linux
+  - docker
+---
 
-Conseguí el enlace al proyecto de [George Bourne](https://github.com/itzg) especifico de dockerizar el servidor de minecraft : 
+Después de  [haber Instalado docker en raspberryPi](Instalar%20docker%20en%20raspberryPi.md) y comprobar que todo funciona, vamos a configurar la raspberrypi para que sirva de servidor de Minecraft.
+
+Conseguí el enlace al proyecto de [George Bourne](https://github.com/itzg) especifico de "dockerizar" el servidor de Minecraft : 
 
 - Para la version de java : https://github.com/itzg/docker-minecraft-server
 - Version bedrock : https://github.com/itzg/docker-minecraft-bedrock-server
 
 No voy a explicar como configurar el servidor, puesto que para mi uso, voy a dejarlo todo por defecto. 
 
-PAra arrancar el servidor tan solo es necesario ejecutar el siguiente comando docker: 
+Para arrancar el servidor tan solo es necesario ejecutar el siguiente comando docker: 
 ```console
 
 $ docker run -d -e EULA=TRUE -p 19132:19132/udp -v mc-bedrock-data:/data itzg/minecraft-bedrock-server
@@ -24,10 +32,10 @@ Cada argumento :
 
 >[!note]
 > Ahora mismo si apagas tu raspberry y vuelves a encenderla, el servidor de Minecraft no se inicia automáticamente.  Para que se inicie con la raspberry debes de configurarlo como servicio.
-> Visita > [[../Linux/Cómo configurar un servicio funcionando en un contenedor Docker]] para saber que hacer a continuación.
+> Visita > [¿Cómo configurar un servicio funcionando en un contenedor Docker?](../Linux/Cómo configurar un servicio funcionando en un contenedor Docker) para saber que hacer a continuación.
 
 
-Poco a poco iré configurando las copias de seguridad y otros aspectos del servidor. Iré comentando.
+Poco a poco iré configurando las copias de seguridad y otros aspectos del servidor
 
 
 

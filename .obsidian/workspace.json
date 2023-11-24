@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Saludos.md",
+                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Saludos.md",
+                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Saludos.md",
+                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Saludos.md"
+                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md"
               }
             }
           }
@@ -149,6 +149,11 @@
   },
   "active": "d6990b69384f6fc0",
   "lastOpenFiles": [
+    "Linux/Como trabajar con LVM.md",
+    "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
+    "raspberrypi/Servidor de Minecraft bedrock en Raspberrypi.md",
+    "raspberrypi/Instalar docker en raspberryPi.md",
+    "Saludos.md",
     "Godot/Godot Engine - Desarrollo de videojuegos.md",
     "Godot/Shaders en Godot.md",
     "resources/godot_vector4_input_visual.png",
@@ -160,13 +165,8 @@
     "assets/Pasted image 20231108230603.png",
     "assets/Pasted image 20231108221809.png",
     "Godot",
-    "Linux/Como trabajar con LVM.md",
-    "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
     "Linux/Linux.md",
-    "raspberrypi/Instalar docker en raspberryPi.md",
     "raspberrypi/raspberrypi.md",
-    "raspberrypi/Servidor de Minecraft bedrock en Raspberrypi.md",
-    "Saludos.md",
     "README.md",
     "docs/assets/Pasted image 20230830183125.png",
     "docs/assets",

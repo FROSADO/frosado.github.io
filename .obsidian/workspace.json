@@ -35,12 +35,24 @@
             "id": "bfa49cec665fa855",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "resources/Drawing 2025-04-21 17.52.07.excalidraw.md"
+                "file": "raspberrypi/Instalar docker en raspberryPi.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-04-21 17.52.07.excalidraw"
+              "icon": "lucide-file",
+              "title": "Instalar docker en raspberryPi"
             }
           }
         ],
@@ -117,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resources/Drawing 2025-04-21 17.52.07.excalidraw.md",
+                "file": "raspberrypi/Instalar docker en raspberryPi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Drawing 2025-04-21 17.52.07.excalidraw"
+              "title": "Enlaces entrantes de Instalar docker en raspberryPi"
             }
           },
           {
@@ -193,37 +205,40 @@
   },
   "active": "bfa49cec665fa855",
   "lastOpenFiles": [
-    "myenv/Lib/site-packages/pip/_internal/__pycache__/configuration.cpython-311.pyc",
-    "myenv/Lib/site-packages/pip/_internal/__pycache__/wheel_builder.cpython-311.pyc",
-    "myenv/Lib/site-packages/__pycache__/appdirs.cpython-311.pyc",
-    "myenv/Lib/site-packages/__pycache__/typing_extensions.cpython-311.pyc",
     "html/obs.html/rss",
-    "html/obs.html/data/search.json.gzip",
     "html/obs.html/data/graph.json",
+    "html/obs.html/data/search.json.gzip",
     "html/obs.html/data",
     "html/favicon.ico",
     "html/obs.html/static/graphers/3d.js",
     "html/obs.html/static/graphers/2d.js",
+    "html/obs.html/static/taglist.css",
+    "html/obs.html/static/SourceCodePro-Regular.ttf",
+    "html/obs.html/static/smiles.js",
     "html/obs.html/static/search.svg",
+    "html/obs.html/static/search.js",
     "html/obs.html/static/rss.svg",
     "html/obs.html/static/hashtag.svg",
     "html/obs.html/static/graph.svg",
     "html/obs.html/static/external.svg",
     "html/obs.html/static/dirtree.svg",
+    "raspberrypi/raspberrypi.md",
+    "raspberrypi/Instalar docker en raspberryPi.md",
+    "resources/Drawing 2025-04-21 17.52.07.excalidraw.md",
     "html/resources/godot_vector4_input_visual.png",
     "html/assets/Pasted image 20231117095019.png",
-    "html/assets/Pasted image 20231117092353.png",
     "html/assets/Pasted image 20231108230603.png",
+    "html/assets/Pasted image 20231117092353.png",
     "output/md/not_created.md",
     "output/md/Godot/Shaders en Godot.md",
     "output/md/Godot/Godot Engine - Desarrollo de videojuegos.md",
-    "output/md/Linux/Bash - Manipulación de strings en bash.md",
     "output/md/Linux/Linux.md",
-    "output/md/Linux/Como trabajar con LVM.md",
     "output/md/Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
+    "output/md/Linux/Bash - Manipulación de strings en bash.md",
+    "output/md/Linux/Como trabajar con LVM.md",
     "output/md/Prueba/Prueba.md",
-    "output/md/raspberrypi/Servidor de Minecraft bedrock en Raspberrypi.md",
     "output/md/raspberrypi/Instalar docker en raspberryPi.md",
+    "output/md/raspberrypi/Servidor de Minecraft bedrock en Raspberrypi.md",
     "output/md/raspberrypi/raspberrypi.md",
     "output/md/about/About Me.md",
     "output/md/index.md",
@@ -235,9 +250,6 @@
     "myenv/Lib/site-packages/pymdown_extensions-10.14.3.dist-info/licenses/LICENSE.md",
     "myenv/Lib/site-packages/idna-3.10.dist-info/LICENSE.md",
     "myenv/Lib/site-packages/markdown-3.8.dist-info/licenses/LICENSE.md",
-    "myenv/Lib/site-packages/soupsieve-2.7.dist-info/licenses/LICENSE.md",
-    "resources/Drawing 2025-04-21 17.52.07.excalidraw.md",
-    "Prueba/Prueba.md",
-    "Linux/Bash - Manipulación de strings en bash.md"
+    "myenv/Lib/site-packages/soupsieve-2.7.dist-info/licenses/LICENSE.md"
   ]
 }

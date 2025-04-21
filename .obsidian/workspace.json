@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash - Manipulación de strings en bash.md",
+                "file": "output/md/Prueba/Prueba.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,23 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Bash - Manipulación de strings en bash"
+              "title": "Prueba"
+            }
+          },
+          {
+            "id": "bfa49cec665fa855",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "resources/Drawing 2025-04-21 17.52.07.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-04-21 17.52.07.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash - Manipulación de strings en bash.md",
+                "file": "resources/Drawing 2025-04-21 17.52.07.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Bash - Manipulación de strings en bash"
+              "title": "Enlaces entrantes de Drawing 2025-04-21 17.52.07.excalidraw"
             }
           },
           {
@@ -178,11 +191,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "d6990b69384f6fc0",
+  "active": "342a736160e34218",
   "lastOpenFiles": [
+    "output/md/Prueba/Prueba.md",
+    "resources/Drawing 2025-04-21 17.52.07.excalidraw.md",
+    "Prueba/Prueba.md",
+    "Linux/Bash - Manipulación de strings en bash.md",
     "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
     "Linux/Como trabajar con LVM.md",
-    "Linux/Bash - Manipulación de strings en bash.md",
     "Linux/Linux.md",
     "about/About Me.md",
     "Saludos.md",
@@ -209,7 +225,6 @@
     "blog",
     "_config.yml",
     "index.md",
-    "Prueba/Prueba.md",
     "Prueba/Prueba con el video1.md",
     "html/resources/lvm-esquema-linear.svg",
     "html/resources/lvm-esquema-en-banda.svg",
@@ -223,8 +238,6 @@
     "html/resources/resources/lvm-esquema-linear.md",
     "html/resources/resources/lvm-esquema-en-banda.md",
     "html/resources/resources/lvm-esquema.excalidraw.md",
-    "resources/lvm-esquema.excalidraw.md",
-    "resources/lvm-esquema-en-banda.md",
-    "resources/lvm-esquema-linear.md"
+    "resources/lvm-esquema.excalidraw.md"
   ]
 }

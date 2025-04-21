@@ -16,8 +16,8 @@ Con el fichero de configuración :
 
 ```yaml
 
-obsidian_entrypoint_path_str: 'c:/users/eferosa/OneDrive - Ericsson/notas/Agenda/Reuniones/2023/2023-10-03 14_09 Reunión.md'
-obsidian_folder_path_str: 'c:/users/eferosa/OneDrive - Ericsson/notas'
+obsidian_entrypoint_path_str: 'c:/users/frosado/notas/prueba.md'
+obsidian_folder_path_str: 'c:/users/frosado/notas'
 
 ```
 
@@ -31,6 +31,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -54,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install dependencies and run build
         run: |
           cd ${{ github.workspace }}
@@ -64,18 +65,19 @@ jobs:
           pwd
           obsidianhtml convert -v
           touch html/.nojekyll
-          mv assets/* html/assets/
+          cp --force -r --update --link resources html/
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'html'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
+
 
 ```
 
-Con las ventajas de editar en markdown y obsdian
+Con las ventajas de editar en markdown y obsidian
 ## Latex
 
 $$

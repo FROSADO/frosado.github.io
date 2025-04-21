@@ -35,7 +35,7 @@ jobs:
           cd ${{ github.workspace }}
           ls -la
           pip install --upgrade pip
-          pip install obsidianhtml==3.5.2
+          pip install obsidianhtml==4.0.1
           pwd
           obsidianhtml convert -v
           touch html/.nojekyll

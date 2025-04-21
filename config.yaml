@@ -25,6 +25,18 @@ toggles:
         show_in_note_footer: True
     embedded_search:
       enabled: True
+    graph:
+      enabled: True           # Include code to build the graph view per page (default: True)
+      show_inclusions_in_graph: True
+      templates:
+        - id: 2d
+          name: 2d
+          path: builtin<2d>
+        - id: 3d
+          name: 3d
+          path: builtin<3d>
+      styling:
+        show_icon: True
     rss:
       enabled: False
       host_root: 'https://frosado.github.io/'

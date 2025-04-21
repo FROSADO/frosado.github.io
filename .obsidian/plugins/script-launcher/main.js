@@ -62,6 +62,11 @@ var ScriptLauncher = class extends import_obsidian.Plugin {
       yield this.loadSettings();
       this.createIcons();
       this.addSettingTab(new ScriptLauncherSettingTab(this.app, this));
+      for (const script of this.scripts) {
+        if (script.runOnStartup) {
+          this.runScript(script);
+        }
+      }
       this.addCommand({
         id: "run-script",
         name: "Run script",
@@ -113,7 +118,7 @@ var ScriptLauncher = class extends import_obsidian.Plugin {
     });
   }
   runScript(script) {
-    const process = spawn(script.path, [this.getVaultPath(), this.getFilePath()]);
+    const process = spawn(script.path, [this.getVaultPath(), this.getFilePath()], { shell: true });
     process.stdout.on("data", (data) => {
       console.log(`stdout: ${data}`);
       new import_obsidian.Notice(data);
@@ -131,7 +136,7 @@ var ScriptLauncher = class extends import_obsidian.Plugin {
       });
   }
   getVaultPath() {
-    let adapter = app.vault.adapter;
+    const adapter = app.vault.adapter;
     if (adapter instanceof import_obsidian.FileSystemAdapter) {
       return adapter.getBasePath();
     }
@@ -161,9 +166,9 @@ var ScriptLauncherSettingTab = class extends import_obsidian.PluginSettingTab {
   createSettings() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h2", { text: "Settings for my awesome plugin." });
+    containerEl.createEl("h2", { text: "Script Launcher Settings" });
     for (let i = 0; i < this.plugin.scripts.length; i++) {
-      let script = this.plugin.scripts[i];
+      const script = this.plugin.scripts[i];
       new import_obsidian.Setting(containerEl).setName("========= Script " + i + " =========");
       new import_obsidian.Setting(containerEl).setName("Script name").addText((text) => text.setPlaceholder("Unnamed").setValue(script.name).onChange((value) => __async(this, null, function* () {
         script.name = value;
@@ -177,6 +182,20 @@ var ScriptLauncherSettingTab = class extends import_obsidian.PluginSettingTab {
         var _a;
         toggle.setValue((_a = script.showOnBottomBar) != null ? _a : false).onChange((v) => __async(this, null, function* () {
           script.showOnBottomBar = v;
+          yield this.onSettingsChange();
+        }));
+      });
+      new import_obsidian.Setting(containerEl).setName("Run on startup").addToggle((toggle) => {
+        var _a;
+        toggle.setValue((_a = script.runOnStartup) != null ? _a : false).onChange((v) => __async(this, null, function* () {
+          script.runOnStartup = v;
+          yield this.onSettingsChange();
+        }));
+      });
+      new import_obsidian.Setting(containerEl).setName("Show exit code").addToggle((toggle) => {
+        var _a;
+        toggle.setValue((_a = script.showExitCode) != null ? _a : false).onChange((v) => __async(this, null, function* () {
+          script.showExitCode = v;
           yield this.onSettingsChange();
         }));
       });
@@ -198,11 +217,28 @@ var ScriptLauncherSettingTab = class extends import_obsidian.PluginSettingTab {
     new import_obsidian.Setting(containerEl).setName("Add Script").addButton((button) => button.setIcon("plus-with-circle").onClick((evt) => __async(this, null, function* () {
       this.plugin.scripts.push({
         name: "Unnamed",
-        path: "ls"
+        path: ""
       });
       yield this.plugin.saveSettings();
       this.createSettings();
     })));
+  }
+  openFilePicker() {
+    return __async(this, null, function* () {
+      return new Promise((resolve) => {
+        const input = document.createElement("input");
+        input.type = "file";
+        input.onchange = (event) => {
+          const target = event.target;
+          if (target.files && target.files.length > 0) {
+            resolve(target.files[0].name);
+          } else {
+            resolve(null);
+          }
+        };
+        input.click();
+      });
+    });
   }
 };
 var ScriptSelectionModal = class extends import_obsidian.SuggestModal {
@@ -220,3 +256,5 @@ var ScriptSelectionModal = class extends import_obsidian.SuggestModal {
     this.plugin.runScript(script);
   }
 };
+
+/* nosourcemap */

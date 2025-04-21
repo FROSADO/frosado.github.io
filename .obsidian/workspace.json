@@ -13,11 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
-                "mode": "preview",
+                "file": "Linux/Bash - Manipulación de strings en bash.md",
+                "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": true
-              }
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Bash - Manipulación de strings en bash"
             }
           }
         ]
@@ -39,8 +50,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -55,7 +69,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
             }
           },
           {
@@ -63,7 +79,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
             }
           }
         ]
@@ -86,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
+                "file": "Linux/Bash - Manipulación de strings en bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +112,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Bash - Manipulación de strings en bash"
             }
           },
           {
@@ -103,10 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
+                "file": "Saludos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Saludos"
             }
           },
           {
@@ -116,8 +138,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
             }
           },
           {
@@ -126,8 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md"
-              }
+                "file": "Saludos.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Saludos"
             }
           }
         ]
@@ -138,22 +169,26 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "canvas:Crear nuevo lienzo": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo canvas": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "d6990b69384f6fc0",
   "lastOpenFiles": [
-    "Linux/Como trabajar con LVM.md",
     "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
+    "Linux/Como trabajar con LVM.md",
+    "Linux/Bash - Manipulación de strings en bash.md",
+    "Linux/Linux.md",
+    "about/About Me.md",
+    "Saludos.md",
+    "README.md",
     "raspberrypi/Servidor de Minecraft bedrock en Raspberrypi.md",
     "raspberrypi/Instalar docker en raspberryPi.md",
-    "Saludos.md",
     "Godot/Godot Engine - Desarrollo de videojuegos.md",
     "Godot/Shaders en Godot.md",
     "resources/godot_vector4_input_visual.png",
@@ -165,9 +200,7 @@
     "assets/Pasted image 20231108230603.png",
     "assets/Pasted image 20231108221809.png",
     "Godot",
-    "Linux/Linux.md",
     "raspberrypi/raspberrypi.md",
-    "README.md",
     "docs/assets/Pasted image 20230830183125.png",
     "docs/assets",
     "docs/index.md",
@@ -192,7 +225,6 @@
     "html/resources/resources/lvm-esquema.excalidraw.md",
     "resources/lvm-esquema.excalidraw.md",
     "resources/lvm-esquema-en-banda.md",
-    "resources/lvm-esquema-linear.md",
-    "output/md/Linux/Linux.md"
+    "resources/lvm-esquema-linear.md"
   ]
 }

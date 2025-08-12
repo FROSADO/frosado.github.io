@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prueba/Prueba.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Prueba"
-            }
-          },
-          {
-            "id": "bfa49cec665fa855",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -52,11 +28,34 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Linux"
+              "title": "README"
+            }
+          },
+          {
+            "id": "bfa49cec665fa855",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Cómo usar Curl para verificar si un archivo remoto está disponible.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Cómo usar Curl para verificar si un archivo remoto está disponible"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +138,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Linux"
+              "title": "Enlaces entrantes de README"
             }
           },
           {
@@ -203,13 +202,27 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bfa49cec665fa855",
+  "active": "d6990b69384f6fc0",
   "lastOpenFiles": [
+    "assets/Pasted image 20231108230603.png",
+    "assets/Pasted image 20231117092353.png",
+    "assets/Pasted image 20231108221809.png",
+    "Session sobre imagenes k8s.md",
+    "assets/Pasted image 20250812152250.png",
+    "assets/Pasted image 20250812152628.png",
+    "assets/Pasted image 20250812152907.png",
+    "Saludos.md",
+    "assets/Pasted image 20250812151734.png",
+    "assets/Pasted image 20250812151607.png",
+    "assets/Pasted image 20250812151145.png",
+    "assets/Pasted image 20250812151132.png",
+    "Prueba/Prueba.md",
+    "Linux/Cómo usar Curl para verificar si un archivo remoto está disponible.md",
     "Linux/Bash - Manipulación de strings en bash.md",
     "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
     "Linux/Como trabajar con LVM.md",
+    "Linux/Linux.md",
     "resources/lvm-esquema.excalidraw.svg",
-    "Prueba/Prueba.md",
     "raspberrypi/Instalar docker en raspberryPi.md",
     "html/obs.html/rss",
     "html/obs.html/data/graph.json",
@@ -221,17 +234,8 @@
     "html/obs.html/static/taglist.css",
     "html/obs.html/static/SourceCodePro-Regular.ttf",
     "html/obs.html/static/smiles.js",
-    "html/obs.html/static/search.svg",
-    "html/obs.html/static/rss.svg",
-    "html/obs.html/static/hashtag.svg",
-    "html/obs.html/static/graph.svg",
-    "html/obs.html/static/external.svg",
-    "html/obs.html/static/dirtree.svg",
     "raspberrypi/raspberrypi.md",
     "resources/Drawing 2025-04-21 17.52.07.excalidraw.md",
-    "html/resources/godot_vector4_input_visual.png",
-    "html/assets/Pasted image 20231117095019.png",
-    "html/assets/Pasted image 20231108230603.png",
     "output/md/not_created.md",
     "output/md/Godot/Shaders en Godot.md",
     "output/md/Godot/Godot Engine - Desarrollo de videojuegos.md",
@@ -245,11 +249,6 @@
     "output/md/raspberrypi/raspberrypi.md",
     "output/md/about/About Me.md",
     "output/md/index.md",
-    "myenv/Lib/site-packages/obsidianhtml/src/installer/dist/readme.md",
-    "myenv/Lib/site-packages/obsidianhtml/src/html/templates/not_created.md",
-    "myenv/Lib/site-packages/obsidianhtml/gui/readme.md",
-    "myenv/Lib/site-packages/obsidianhtml/core/readme.md",
-    "myenv/Lib/site-packages/obsidianhtml/README.md",
-    "myenv/Lib/site-packages/pymdown_extensions-10.14.3.dist-info/licenses/LICENSE.md"
+    "myenv/Lib/site-packages/obsidianhtml/src/installer/dist/readme.md"
   ]
 }

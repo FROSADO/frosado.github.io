@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Godot/10 Minutos al Día haciendo videojuegos.md",
+                "file": "programacion/Git - Conceptos y guia.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "10 Minutos al Día haciendo videojuegos"
+              "title": "Git - Conceptos y guia"
             }
           }
         ],
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +133,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -153,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Godot/10 Minutos al Día haciendo videojuegos.md",
+                "file": "programacion/Git - Conceptos y guia.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +164,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 10 Minutos al Día haciendo videojuegos"
+              "title": "Enlaces entrantes de Git - Conceptos y guia"
             }
           },
           {
@@ -243,8 +244,8 @@
   },
   "active": "dc1b4ea180883c70",
   "lastOpenFiles": [
-    "Godot/Shaders en Godot.md",
     "Godot/10 Minutos al Día haciendo videojuegos.md",
+    "Godot/Shaders en Godot.md",
     "Godot/Godot Engine - Desarrollo de videojuegos.md",
     "Linux/Cómo usar Curl para verificar si un archivo remoto está disponible.md",
     "Linux/Linux.md",
@@ -252,7 +253,7 @@
     "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
     "Linux/Bash - Manipulación de strings en bash.md",
     "programacion/Programación.md",
-    "programacion/Git - Conceptos y guía.md",
+    "programacion/Git - Conceptos y guia.md",
     "programacion",
     "README.md",
     "assets/Pasted image 20231108230603.png",

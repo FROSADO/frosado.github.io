@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programacion/Git - Conceptos y guia.md",
+                "file": "raspberrypi/raspberrypi.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git - Conceptos y guia"
+              "title": "raspberrypi"
             }
           }
         ],
@@ -133,8 +133,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -154,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programacion/Git - Conceptos y guia.md",
+                "file": "raspberrypi/raspberrypi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +163,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Git - Conceptos y guia"
+              "title": "Enlaces entrantes de raspberrypi"
             }
           },
           {
@@ -244,6 +243,8 @@
   },
   "active": "dc1b4ea180883c70",
   "lastOpenFiles": [
+    "programacion/Programación.md",
+    "programacion/Conceptos y guía.md",
     "Godot/10 Minutos al Día haciendo videojuegos.md",
     "Godot/Shaders en Godot.md",
     "Godot/Godot Engine - Desarrollo de videojuegos.md",
@@ -252,8 +253,6 @@
     "Linux/Como trabajar con LVM.md",
     "Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
     "Linux/Bash - Manipulación de strings en bash.md",
-    "programacion/Programación.md",
-    "programacion/Git - Conceptos y guia.md",
     "programacion",
     "README.md",
     "assets/Pasted image 20231108230603.png",

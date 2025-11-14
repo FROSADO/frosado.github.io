@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raspberrypi/raspberrypi.md",
+                "file": "programacion/GIT, Conceptos y guía.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "raspberrypi"
+              "title": "GIT, Conceptos y guía"
             }
           }
         ],
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raspberrypi/raspberrypi.md",
+                "file": "programacion/GIT, Conceptos y guía.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de raspberrypi"
+              "title": "Enlaces entrantes de GIT, Conceptos y guía"
             }
           },
           {
@@ -244,7 +244,10 @@
   "active": "dc1b4ea180883c70",
   "lastOpenFiles": [
     "programacion/Programación.md",
-    "programacion/Conceptos y guía.md",
+    "programacion/GIT, Conceptos y guía.md",
+    "raspberrypi/Instalar docker en raspberryPi.md",
+    "raspberrypi/Servidor de Minecraft bedrock en Raspberrypi.md",
+    "raspberrypi/raspberrypi.md",
     "Godot/10 Minutos al Día haciendo videojuegos.md",
     "Godot/Shaders en Godot.md",
     "Godot/Godot Engine - Desarrollo de videojuegos.md",
@@ -268,7 +271,6 @@
     "assets/Pasted image 20250812151145.png",
     "assets/Pasted image 20250812151132.png",
     "Prueba/Prueba.md",
-    "raspberrypi/Instalar docker en raspberryPi.md",
     "html/obs.html/rss",
     "html/obs.html/data/graph.json",
     "html/obs.html/data/search.json.gzip",
@@ -278,7 +280,6 @@
     "html/obs.html/static/graphers/2d.js",
     "html/obs.html/static/taglist.css",
     "html/obs.html/static/SourceCodePro-Regular.ttf",
-    "raspberrypi/raspberrypi.md",
     "resources/Drawing 2025-04-21 17.52.07.excalidraw.md",
     "output/md/not_created.md",
     "output/md/Godot/Shaders en Godot.md",
@@ -287,7 +288,6 @@
     "output/md/Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
     "output/md/Linux/Bash - Manipulación de strings en bash.md",
     "output/md/Linux/Como trabajar con LVM.md",
-    "output/md/Prueba/Prueba.md",
-    "output/md/raspberrypi/Instalar docker en raspberryPi.md"
+    "output/md/Prueba/Prueba.md"
   ]
 }

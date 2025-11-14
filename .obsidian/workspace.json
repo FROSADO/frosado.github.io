@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programacion/GIT, Conceptos y guía.md",
+                "file": "programacion/Programación.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "GIT, Conceptos y guía"
+              "title": "Programación"
             }
           }
         ],
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programacion/GIT, Conceptos y guía.md",
+                "file": "programacion/Programación.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de GIT, Conceptos y guía"
+              "title": "Enlaces entrantes de Programación"
             }
           },
           {
@@ -201,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Saludos.md",
+                "file": "programacion/Programación.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Saludos"
+              "title": "Esquema de Programación"
             }
           },
           {
@@ -220,7 +220,8 @@
               "title": "Notas al pie"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -243,11 +244,12 @@
   },
   "active": "dc1b4ea180883c70",
   "lastOpenFiles": [
+    "Godot/Godot.md",
     "programacion/Programación.md",
+    "programacion/GIT, Conceptos y guía.md",
     "raspberrypi/Servidor de Minecraft bedrock en Raspberrypi.md",
     "raspberrypi/Instalar docker en raspberryPi.md",
     "raspberrypi/raspberrypi.md",
-    "programacion/GIT, Conceptos y guía.md",
     "Godot/10 Minutos al Día haciendo videojuegos.md",
     "Godot/Shaders en Godot.md",
     "Godot/Godot Engine - Desarrollo de videojuegos.md",
@@ -287,7 +289,6 @@
     "output/md/Linux/Linux.md",
     "output/md/Linux/Cómo configurar un servicio funcionando en un contenedor Docker.md",
     "output/md/Linux/Bash - Manipulación de strings en bash.md",
-    "output/md/Linux/Como trabajar con LVM.md",
-    "output/md/Prueba/Prueba.md"
+    "output/md/Linux/Como trabajar con LVM.md"
   ]
 }

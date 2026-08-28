@@ -32,7 +32,7 @@ Cada argumento :
 
 >[!note]
 > Ahora mismo si apagas tu raspberry y vuelves a encenderla, el servidor de Minecraft no se inicia automáticamente.  Para que se inicie con la raspberry debes de configurarlo como servicio.
-> Visita > [¿Cómo configurar un servicio funcionando en un contenedor Docker?](../Linux/Cómo configurar un servicio funcionando en un contenedor Docker) para saber que hacer a continuación.
+> Visita > [¿Cómo configurar un servicio funcionando en un contenedor Docker?](../Linux/Cómo%20configurar%20un%20servicio%20funcionando%20en%20un%20contenedor%20Docker.md) para saber que hacer a continuación.
 
 
 Poco a poco iré configurando las copias de seguridad y otros aspectos del servidor

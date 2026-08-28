@@ -9,7 +9,7 @@ tags:
 En el video nos muestra la referencia al lenguaje de shaders
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
-Partimos del hecho de que todo en [Godot](Godot/Godot%20Engine%20-%20Desarrollo%20de%20videojuegos.md) son "mesh". Es decir, triángulos. 
+Partimos del hecho de que todo en [Godot](Godot%20Engine%20-%20Desarrollo%20de%20videojuegos.md) son "mesh". Es decir, triángulos. 
 En gráficos rasterizados (pixel) lo que hace es tomar fragmentos de los pixeles. En lugar de trabajar con puntos, trabajamos con los fragmentos de los `pixeles`. 
 
 ## Programacion visual

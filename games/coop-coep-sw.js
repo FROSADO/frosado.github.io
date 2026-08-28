@@ -30,7 +30,7 @@ self.addEventListener("fetch", (event) => {
         // Clone the response to modify headers
         const newHeaders = new Headers(response.headers);
         newHeaders.set("Cross-Origin-Opener-Policy", "same-origin");
-        newHeaders.set("Cross-Origin-Embedder-Policy", "require-corp");
+        newHeaders.set("Cross-Origin-Embedder-Policy", "credentialless");
 
         return new Response(response.body, {
           status: response.status,

@@ -21,6 +21,7 @@ const config: QuartzConfig = {
       ".obsidian",
       ".github",
       "node_modules",
+      "**/*.excalidraw.md",
     ],
     defaultDateType: "modified",
     theme: {

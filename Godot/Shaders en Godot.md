@@ -15,7 +15,7 @@ En gráficos rasterizados (pixel) lo que hace es tomar fragmentos de los pixeles
 ## Programacion visual
 No siempre es necesario programar el sharer, también es posible usar el editor visual de shaders, se llaman `VisualShaders`: 
 
-![](assets/Pasted%20image%2020231108221809.png)
+![](../assets/Pasted%20image%2020231108221809.png)
 
 
 Para entender un poco como funcionan los shaders, podemos pensar que se ejecuta todos los puntos al mismo tiempo, cada cálculo se hace en paralelo y no podemos tener refencias a como se ha calculado otro punto o como se calculó previamente. 
@@ -29,12 +29,12 @@ Algunas notas sobre las entradas:
 
 Ahora, en el ejemplo que se muestra explica que el centro del objeto `0,0` esta situado en el centro de la imagen y es la forma de calcular los vértices del objeto: 
 
-![](assets/Pasted%20image%2020231117092353.png)
+![](../assets/Pasted%20image%2020231117092353.png)
 
 La programacion de bloques se hace enlazando bloques con cables, en ocasiones no es demasiado intuitivo. 
 
 Un detalle de los shaders es que hasta los ejes `x`,`y`  y `z` se muestran como `RGB`. 
-![](assets/Pasted%20image%2020231108230603.png)
+![](../assets/Pasted%20image%2020231108230603.png)
 Y que el icono de la izquierda indica que tipo de variable es. Este ejemplo es un vector de 4 elementos (`vec4`):
 ![](../resources/godot_vector4_input_visual.png)
 
@@ -49,7 +49,7 @@ f(t) = \sin\left(\frac{t}{2}\right)*100
 $$
 
 Esto lo tenemos que representar asi : 
-![](assets/Pasted%20image%2020231117095019.png)
+![](../assets/Pasted%20image%2020231117095019.png)
 
 ## Usando código
 

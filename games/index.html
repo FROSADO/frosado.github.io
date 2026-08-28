@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games — El sitio de FROSADO</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #161618; color: #ebebec;
+      display: flex; flex-direction: column; align-items: center;
+      min-height: 100vh; padding: 2rem;
+    }
+    h1 { margin-bottom: 0.5rem; }
+    .subtitle { color: #7b97aa; margin-bottom: 2rem; }
+    .games-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem; max-width: 900px; width: 100%;
+    }
+    .game-card {
+      background: #393639; border-radius: 8px; padding: 1.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .game-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+    .game-card h2 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .game-card p { color: #b8b8b8; font-size: 0.9rem; margin-bottom: 1rem; }
+    .game-card a {
+      color: #84a59d; text-decoration: none; font-weight: bold;
+    }
+    .game-card a:hover { text-decoration: underline; }
+    .back-link { margin-top: 2rem; color: #7b97aa; text-decoration: none; }
+    .back-link:hover { color: #84a59d; }
+    .sw-status { font-size: 0.8rem; color: #646464; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>🎮 Mis Juegos</h1>
+  <p class="subtitle">Juegos hechos con Godot Engine, jugables en el navegador</p>
+
+  <div class="games-grid">
+    <!-- Add new game cards here as you export them -->
+    <div class="game-card">
+      <h2>🏎️ Juego de Carreras</h2>
+      <p>Mi primer proyecto con Godot. Un juego de carreras sencillo.</p>
+      <a href="./carreras/">▶ Jugar</a>
+    </div>
+    <div class="game-card">
+      <h2>🧱 Arkanoid</h2>
+      <p>Un clon de Arkanoid simple hecho como ejercicio.</p>
+      <a href="./arkanoid/">▶ Jugar</a>
+    </div>
+  </div>
+
+  <a class="back-link" href="/">← Volver al blog</a>
+  <p class="sw-status" id="sw-status">Cargando Service Worker...</p>
+
+  <script>
+    // Register the COOP/COEP Service Worker required for Godot's SharedArrayBuffer
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./coop-coep-sw.js", { scope: "./" })
+        .then((reg) => {
+          if (reg.active) {
+            document.getElementById("sw-status").textContent =
+              "✅ Service Worker activo — SharedArrayBuffer disponible";
+          } else {
+            // SW is installing — need a reload for headers to take effect
+            document.getElementById("sw-status").textContent =
+              "⏳ Service Worker instalándose — recarga la página para activar";
+            reg.addEventListener("updatefound", () => {
+              const newWorker = reg.installing;
+              newWorker.addEventListener("statechange", () => {
+                if (newWorker.state === "activated") {
+                  window.location.reload();
+                }
+              });
+            });
+          }
+        })
+        .catch((err) => {
+          document.getElementById("sw-status").textContent =
+            "❌ Error registrando Service Worker: " + err.message;
+        });
+    } else {
+      document.getElementById("sw-status").textContent =
+        "❌ Service Workers no soportados en este navegador";
+    }
+  </script>
+</body>
+</html>

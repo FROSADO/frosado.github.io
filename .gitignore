@@ -14,3 +14,8 @@ output/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Godot editor files (only export output goes in games/)
+.godot/
+*.import
+export_presets.cfg

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COOP/COEP Test — Godot Compatibility</title>
+  <style>
+    body {
+      font-family: monospace; background: #1a1a2e; color: #e0e0e0;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; min-height: 100vh; margin: 0;
+    }
+    .test-box {
+      background: #16213e; padding: 2rem; border-radius: 8px;
+      max-width: 600px; width: 90%;
+    }
+    h1 { color: #84a59d; margin-bottom: 1rem; }
+    .result { padding: 0.5rem; margin: 0.5rem 0; border-radius: 4px; }
+    .pass { background: #1b4332; color: #95d5b2; }
+    .fail { background: #441111; color: #ff6b6b; }
+    .info { background: #1a1a3e; color: #7b97aa; }
+    a { color: #84a59d; }
+  </style>
+</head>
+<body>
+  <div class="test-box">
+    <h1>🧪 COOP/COEP Test</h1>
+    <p>This page verifies that the Service Worker correctly injects
+       the headers needed for Godot HTML5 games.</p>
+    <hr style="border-color:#333; margin:1rem 0">
+    <div id="results"></div>
+    <p style="margin-top:1rem"><a href="../">← Back to games</a></p>
+  </div>
+
+  <script>
+    const results = document.getElementById("results");
+
+    function addResult(label, pass, detail) {
+      const div = document.createElement("div");
+      div.className = "result " + (pass ? "pass" : "fail");
+      div.textContent = (pass ? "✅ " : "❌ ") + label + " — " + detail;
+      results.appendChild(div);
+    }
+
+    function addInfo(text) {
+      const div = document.createElement("div");
+      div.className = "result info";
+      div.textContent = "ℹ️ " + text;
+      results.appendChild(div);
+    }
+
+    // Test 1: SharedArrayBuffer available?
+    const sabAvailable = typeof SharedArrayBuffer !== "undefined";
+    addResult("SharedArrayBuffer",
+      sabAvailable,
+      sabAvailable ? "Available (Godot threading will work)" : "NOT available (headers missing)");
+
+    // Test 2: crossOriginIsolated?
+    addResult("crossOriginIsolated",
+      window.crossOriginIsolated,
+      window.crossOriginIsolated ? "Page is cross-origin isolated" : "NOT isolated");
+
+    // Test 3: Service Worker active?
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistration().then((reg) => {
+        const active = reg && reg.active;
+        addResult("Service Worker",
+          active,
+          active ? "Active (scope: " + reg.scope + ")" : "Not active — reload page");
+
+        if (!active && reg) {
+          addInfo("Service Worker is installing. Reload the page to activate it.");
+        }
+      });
+    } else {
+      addResult("Service Worker", false, "Not supported in this browser");
+    }
+  </script>
+</body>
+</html>

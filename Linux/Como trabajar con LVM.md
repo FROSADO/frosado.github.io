@@ -1,6 +1,9 @@
 ---
-tags: linux
-
+title: "Cómo trabajar con LVM"
+tags:
+  - linux
+  - lvm
+  - storage
 ---
 # Introducción
 

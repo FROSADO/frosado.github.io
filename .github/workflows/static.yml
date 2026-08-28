@@ -1,50 +1,87 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Build and deploy blog using Quartz v4
+# Quartz is cloned at build time — only content and config live in this repo.
+name: Deploy Quartz site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  QUARTZ_VERSION: "v4.4.0"
+
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout content repo
         uses: actions/checkout@v4
-      - name: Install dependencies and run build
+        with:
+          fetch-depth: 0   # full history for git-based dates
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Clone Quartz
         run: |
-          cd ${{ github.workspace }}
-          ls -la
-          pip install --upgrade pip
-          pip install obsidianhtml==4.0.1
-          pwd
-          obsidianhtml convert -v
-          touch html/.nojekyll
-          cp --force -r --update --link resources html/
+          git clone --depth 1 --branch ${{ env.QUARTZ_VERSION }} \
+            https://github.com/jackyzha0/quartz.git /tmp/quartz
+
+      - name: Copy content into Quartz
+        run: |
+          # Remove default Quartz content
+          rm -rf /tmp/quartz/content
+
+          # Copy all markdown, assets, and resources as Quartz content
+          # Exclude files that are not part of the blog content
+          rsync -av --exclude='.git' \
+                    --exclude='.github' \
+                    --exclude='node_modules' \
+                    --exclude='quartz.config.ts' \
+                    --exclude='quartz.layout.ts' \
+                    --exclude='config.yaml' \
+                    --exclude='template.html' \
+                    --exclude='file.html' \
+                    --exclude='package.json' \
+                    --exclude='html/' \
+                    --exclude='output/' \
+                    ./ /tmp/quartz/content/
+
+          # Override Quartz config with our customized versions
+          cp quartz.config.ts /tmp/quartz/quartz.config.ts
+          cp quartz.layout.ts /tmp/quartz/quartz.layout.ts
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: /tmp/quartz
+
+      - name: Build Quartz site
+        run: npx quartz build
+        working-directory: /tmp/quartz
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'html'
+          path: /tmp/quartz/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

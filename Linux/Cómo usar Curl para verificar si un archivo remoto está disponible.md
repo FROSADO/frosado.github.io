@@ -1,3 +1,10 @@
+---
+title: "Cómo usar Curl para verificar si un archivo remoto está disponible"
+tags:
+  - linux
+  - bash
+  - curl
+---
 
 Cuando se escriben scripts en bash, especialmente cuando se hacen copias de ficheros a un servicio web, ocurre que si se interrumpe una ejecución, habria que verificar si el fichero que se ha copiado ha sido transferido parcialmente o completamente. 
 Este proceso de transferencia de ficheros por lo tanto nos da tres situaciones posibles: 

@@ -1,3 +1,16 @@
+# Quartz build output (generated in CI, not locally)
+public/
+node_modules/
+.quartz-cache/
+package-lock.json
+
+# Legacy obsidianhtml output
 html/
 output/
+
+# IDE
 .vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

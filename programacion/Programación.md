@@ -8,6 +8,6 @@ Algunos apuntes generales sobre programación y herramientas relacionadas, curso
 
 - [GIT Conceptos y guía](GIT,%20Conceptos%20y%20guía.md)
 - [Godot](../Godot/Godot.md)
-- [Bash - Manipulación de strings en bash](../output/md/Linux/Bash%20-%20Manipulación%20de%20strings%20en%20bash.md)
+- [Bash - Manipulación de strings en bash](../Linux/Bash%20-%20Manipulación%20de%20strings%20en%20bash.md)
 
 

@@ -1,3 +1,10 @@
+---
+title: "Linux"
+tags:
+  - linux
+  - index
+---
+
 Algunos apuntes que tengo sobre cosas de Linux: 
 
 

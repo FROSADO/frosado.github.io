@@ -12,9 +12,11 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "plausible",
+    },
     locale: "es-ES",
-    baseUrl: "frosado.github.io",
+    baseUrl: "https://frosado.github.io",
     ignorePatterns: [
       "private",
       "templates",

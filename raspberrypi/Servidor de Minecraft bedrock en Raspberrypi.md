@@ -1,44 +1,161 @@
 ---
+title: "Servidor de Minecraft Bedrock en Raspberry Pi con Docker"
+description: "Tutorial para crear un servidor de Minecraft Bedrock en Raspberry Pi usando Docker. Juega con amigos en tu propia red."
 tags:
   - raspberrypi
   - minecraft
   - linux
   - docker
+  - gaming
+  - servidor-casero
+aliases:
+  - minecraft-bedrock-rpi
+  - servidor-minecraft-docker
 ---
 
-Después de  [haber Instalado docker en raspberryPi](Instalar%20docker%20en%20raspberryPi.md) y comprobar que todo funciona, vamos a configurar la raspberrypi para que sirva de servidor de Minecraft.
+# 🎮 Servidor de Minecraft Bedrock en Raspberry Pi
 
-Conseguí el enlace al proyecto de [George Bourne](https://github.com/itzg) especifico de "dockerizar" el servidor de Minecraft : 
+Después de [haber instalado Docker en Raspberry Pi](Instalar%20docker%20en%20raspberryPi.md) y comprobar que todo funciona, vamos a configurar la Raspberry Pi para que sirva de servidor de Minecraft.
 
-- Para la version de java : https://github.com/itzg/docker-minecraft-server
-- Version bedrock : https://github.com/itzg/docker-minecraft-bedrock-server
+## 📋 Requisitos Previos
 
-No voy a explicar como configurar el servidor, puesto que para mi uso, voy a dejarlo todo por defecto. 
+- ✅ Raspberry Pi con Docker instalado
+- ✅ Conexión a internet estable
+- ✅ Espacio en disco (mínimo 2GB recomendados)
 
-Para arrancar el servidor tan solo es necesario ejecutar el siguiente comando docker: 
-```console
+## 🔗 Recursos Oficiales
 
-$ docker run -d -e EULA=TRUE -p 19132:19132/udp -v mc-bedrock-data:/data itzg/minecraft-bedrock-server
+Conseguí el enlace al proyecto de **George Bourne (@itzg)** específico de "dockerizar" el servidor de Minecraft:
 
+| Versión | Repositorio |
+|---------|-------------|
+| **Java Edition** | https://github.com/itzg/docker-minecraft-server |
+| **Bedrock Edition** | https://github.com/itzg/docker-minecraft-bedrock-server |
+
+## 🚀 Instalación Rápida
+
+### 1. Crear Directorio de Datos
+
+```bash
+mkdir -p ~/minecraft-bedrock
+cd ~/minecraft-bedrock
 ```
 
-Cada argumento : 
-- `run` lanza el contenedor usando la imagen indicada
-- `-d` indica que es un "detached", es decir, que se ejecute de fondo. No muestra nada por pantalla. 
-- `e` se usa para enviar "variables de entorno" al contenedor, en este caso la variable "EULA" se usa para aceptar las condiciones de licencia.
-- `p` indica que abra el puerto del contenedor y hacerlo accesible. El puerto por defecto es el 19132. 
-- `v` o `volume` le dice que use un volumen externo (lo crea si no existe) para la carpeta `/data`. Esto permite que cuando se reinicia el contenedor no se pierdan los datos. A parte es importante hacer copia de seguridad de este volumen, lo vemos más adelante.
-- `itzg/minecraft-bedrock-server` es el nombre de la imagen. 
+### 2. Ejecutar el Contenedor
 
->[!note]
-> Ahora mismo si apagas tu raspberry y vuelves a encenderla, el servidor de Minecraft no se inicia automáticamente.  Para que se inicie con la raspberry debes de configurarlo como servicio.
-> Visita > [¿Cómo configurar un servicio funcionando en un contenedor Docker?](../Linux/Cómo%20configurar%20un%20servicio%20funcionando%20en%20un%20contenedor%20Docker.md) para saber que hacer a continuación.
+```bash
+docker run -d \
+  --name minecraft-bedrock \
+  -p 19132:19132/udp \
+  -v $(pwd)/data:/data \
+  -e EULA=TRUE \
+  itzg/minecraft-bedrock-server
+```
 
+### 3. Verificar que Funciona
 
-Poco a poco iré configurando las copias de seguridad y otros aspectos del servidor
+```bash
+docker logs -f minecraft-bedrock
+```
 
+Espera hasta ver el mensaje "Server started".
 
+## ⚙️ Configuración Avanzada
 
+### Variables de Entorno Útiles
 
+```bash
+docker run -d \
+  --name minecraft-bedrock \
+  -p 19132:19132/udp \
+  -v $(pwd)/data:/data \
+  -e EULA=TRUE \
+  -e DIFFICULTY=normal \
+  -e GAMEMODE=survival \
+  -e MAX_PLAYERS=10 \
+  -e LEVEL_NAME=MundoRaspberry \
+  itzg/minecraft-bedrock-server
+```
 
+| Variable | Descripción | Valores Comunes |
+|----------|-------------|-----------------|
+| `DIFFICULTY` | Dificultad del juego | `peaceful`, `easy`, `normal`, `hard` |
+| `GAMEMODE` | Modo de juego | `survival`, `creative`, `adventure` |
+| `MAX_PLAYERS` | Jugadores máximos | Número (default: 10) |
+| `LEVEL_NAME` | Nombre del mundo | Texto personalizado |
 
+## 🔌 Conectarse al Servidor
+
+### Desde la Misma Red
+
+1. Abre Minecraft Bedrock en tu dispositivo
+2. Ve a **Jugar** → **Servidores**
+3. Desplázate hasta el final y haz clic en **Añadir Servidor**
+4. Introduce:
+   - **Nombre**: Mi Servidor Raspberry
+   - **Dirección**: IP de tu Raspberry Pi
+   - **Puerto**: 19132
+
+### Encontrar la IP de tu Raspberry
+
+```bash
+hostname -I
+```
+
+## 🛠️ Gestión del Servidor
+
+### Comandos Útiles
+
+```bash
+# Ver estado
+docker ps | grep minecraft-bedrock
+
+# Detener servidor
+docker stop minecraft-bedrock
+
+# Iniciar servidor
+docker start minecraft-bedrock
+
+# Reiniciar
+docker restart minecraft-bedrock
+
+# Ver logs en tiempo real
+docker logs -f minecraft-bedrock
+
+# Eliminar (cuidado: borra datos si no montaste volumen)
+docker rm -f minecraft-bedrock
+```
+
+### Hacer Backup del Mundo
+
+```bash
+# Detener servidor
+docker stop minecraft-bedrock
+
+# Copiar datos
+cp -r ~/minecraft-bedrock/data/ ~/backup-minecraft-$(date +%F)
+
+# Reiniciar
+docker start minecraft-bedrock
+```
+
+## ⚡ Optimización para Raspberry Pi
+
+> [!tip] Consejos de Rendimiento
+> - Usa una **Raspberry Pi 4** o superior para mejor experiencia
+> - Limita `MAX_PLAYERS` a 5-10 jugadores
+> - Considera usar SSD en lugar de SD card para mejor I/O
+> - Reduce `view-distance` en configuración avanzada
+
+## 🔗 Recursos Relacionados
+
+- [[Instalar docker en raspberryPi]] - Guía de instalación de Docker
+- [Documentación oficial del contenedor](https://github.com/itzg/docker-minecraft-bedrock-server)
+- [Minecraft Bedrock Dedicated Server](https://www.minecraft.net/en-us/download/server/bedrock/)
+
+---
+
+> [!note] ¿Problemas de conexión?
+> Asegúrate de que el puerto UDP 19132 está abierto en tu firewall y router si quieres acceso desde fuera de casa.
+
+*¿Tienes un servidor funcionando? ¡Comparte tu experiencia!*

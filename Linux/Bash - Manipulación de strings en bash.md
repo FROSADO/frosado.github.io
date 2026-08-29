@@ -1,66 +1,117 @@
 ---
+title: "Bash - Manipulación de Strings y Variables"
+description: "Técnicas avanzadas para manipular strings en Bash. Sustitución, extracción, mayúsculas, minúsculas y más."
 tags:
   - linux
   - bash
+  - scripting
+  - automatizacion
+aliases:
+  - bash-strings
+  - manipulacion-texto-bash
 ---
 
-La técnica para poder manipular el valor de una variable a la que se hace referencia en un script de Bash. 
-Una variable se procesa encerrando el nombre de la variable entre los caracteres `${ }`. La lógica de procesamiento se define mediante caracteres que siguen al nombre de la variable. 
-Por ejemplo, la variable llamada MSG, la instrucción `${MSG^^}` convierte todos los caracteres en minúsculas de la variable MSG a mayúsculas, así:
+# 🐚 Bash - Manipulación de Strings
+
+La manipulación de texto es fundamental en scripting de Bash. Esta guía cubre las técnicas esenciales para trabajar con variables y cadenas de texto.
+
+## 🔧 Sintaxis Básica
+
+Las variables se procesan encerrando el nombre entre `${ }`. Los modificadores se añaden con operadores específicos:
 
 ```bash
+VARIABLE="valor"
+${VARIABLE[operador]}
+```
+
+## 📝 Operadores de Transformación
+
+### Mayúsculas y Minúsculas
+
+| Operador | Descripción | Ejemplo | Resultado |
+|----------|-------------|---------|-----------|
+| `^` | Primera letra MAYÚSCULA | `${msg^}` | `hola Mundo` → `Hola Mundo` |
+| `^^` | Todo a MAYÚSCULAS | `${msg^^}` | `hola Mundo` → `HOLA MUNDO` |
+| `,` | Primera letra minúscula | `${msg,}` | `HOLA Mundo` → `hOLA Mundo` |
+| `,,` | Todo a minúsculas | `${msg,,}` | `HOLA MUNDO` → `hola mundo` |
+
+### Ejemplo Práctico
+
+```bash
+#!/bin/bash
+
 MSG="hola Mundo"
-echo ${MSG^^}
-# HOLA MUNDO
+
+echo "${MSG^^}"    # HOLA MUNDO
+echo "${MSG,,}"    # hola mundo
+echo "${MSG^}"     # Hola Mundo
 ```
 
-Hay varias manipulaciones posibles segun el caracter que se ponga : 
-- `^` : Mayusculas . Cambia el primer caracter de la cadena a Mayúsculas
-- `^^`: Todo a MAYÚSCULAS: Cambia la cadena completa a Mayúsculas
-- `,`: Minusculas: El primer caracter a minúsculas.
-- `,,`: La cadena completa en minusculas
+## ✂️ Extracción y Subcadenas
 
 ```bash
-TXT="Hola MUNDO"
-echo ${TXT,}
-# hola MUNDO
-echo ${TXT,,}
-# hola mundo
-echo ${TXT,^^} | echo ${1,,}
+TEXTO="Hello World"
 
-# El siguiente ejemplo para concatenar dos operaciones
-echo ${MSG,,} | (read var; echo ${var^})
-#     ^                          ^
-#  Todo min.                 Solo primer carácter
-# Hola mundo
+# Extraer desde posición (0-indexed)
+echo "${TEXTO:6}"      # "World"
+echo "${TEXTO:0:5}"    # "Hello"
+
+# Longitud del string
+echo "${#TEXTO}"       # 11
 ```
 
-Tambien se puede modificar las cadenas usando expresiones regulares o porciones de las cadenas.
-
-Tambien se pueden usar expresiones regulares. 
-
-Por ejemplo, si quiero cambiar una palabra concreta: 
+## 🔍 Búsqueda y Reemplazo
 
 ```bash
-TXT="Saluda a Manuel"
-echo ${TXT//Manuel/David}
-# Saluda a David
+ARCHIVO="documento.txt.bak"
 
-TXT="Necesito 100 euros"
-# Va a cambiar todo los textos y va da dejar solo los numeros
-echo ${TXT//[a-zA-Z]/X}
-# XXXXXXXX 100 XXXXX
+# Eliminar extensión
+echo "${ARCHIVO%.bak}"           # documento.txt
+echo "${ARCHIVO%%.*}"            # documento
 
-# Cambiar los numeros
-echo ${TXT//[0-9]/Z}
-# Necesito ZZZ euros
+# Reemplazar primera coincidencia
+echo "${ARCHIVO/txt/pdf}"        # documento.pdf.bak
 
-# O solo una porcion de texto 
-echo ${TXT:4}
-# sito 100 euros
-
-echo ${TXT:4:7}
-# sito 10
-
+# Reemplazar todas las coincidencias
+echo "${ARCHIVO//./_}"           # documento_txt_bak
 ```
 
+## 💡 Casos de Uso Reales
+
+### 1. Normalizar nombres de archivos
+
+```bash
+nombre="Mi Archivo.TXT"
+nombre_normalizado="${nombre,,}"  # mi archivo.txt
+```
+
+### 2. Validar entrada de usuario
+
+```bash
+read -p "¿Continuar? (s/n): " RESPUESTA
+if [[ "${RESPUESTA,,}" == "s" ]]; then
+    echo "Continuando..."
+fi
+```
+
+### 3. Procesar logs
+
+```bash
+while read -r linea; do
+    if [[ "${linea^^}" == *"ERROR"* ]]; then
+        echo "⚠️ ERROR DETECTADO: $linea"
+    fi
+done < logfile.txt
+```
+
+## 🔗 Recursos Relacionados
+
+- [GNU Bash Manual](https://www.gnu.org/software/bash/manual/)
+- [Shell Parameter Expansion](https://wiki.bash-hackers.org/syntax/pe)
+
+---
+
+> [!tip] Consejo Pro
+> Combina estos operadores con arrays y bucles para crear scripts poderosos de procesamiento de texto. ¡La práctica hace al maestro!
+
+*¿Tienes algún truco de Bash que usar frecuentemente? Compártelo en los comentarios.*

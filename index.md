@@ -1,31 +1,53 @@
 ---
 title: "El sitio de FROSADO"
+description: "Blog personal de Fernando Rosado sobre Linux, Docker, Godot Engine y desarrollo de videojuegos. Tutoriales, notas y proyectos open source."
 tags:
   - index
+  - inicio
+  - blog
+aliases:
+  - home
+  - inicio
 ---
 
-# Saludos
+# 👋 Bienvenido a mi espacio digital
 
-> [!note]+ Yo mismo
-> ![yo mismo](resources/yomismo.png)
+Soy **Fernando Rosado**, desarrollador apasionado por el software open source, la administración de sistemas Linux y el desarrollo de videojuegos con Godot Engine.
 
-Página sobre mí y quién soy yo. [About Me](about/About%20Me.md)
+## 🎯 ¿Qué encontrarás aquí?
 
-## Mis proyectos
+Este sitio es mi jardín digital donde comparto:
 
-Mis proyectos en [Github](https://github.com/FROSADO)
+- 📝 **Notas técnicas** sobre Linux, Bash, Docker y administración de sistemas
+- 🎮 **Tutoriales de Godot** y desarrollo de videojuegos
+- 🛠️ **Proyectos personales** que puedes explorar y usar
+- 📚 **Recursos y referencias** que he ido recopilando en mi camino
 
-## El porqué de esta página
+## 📂 Explora por categorías
 
-Voy a ir usando este sitio para ir dejando mis notas.
-Temas:
-- [Raspberry Pi](raspberrypi/raspberrypi.md)
-- [Pruebas varias](Prueba/Prueba.md)
-- [Linux](Linux/Linux.md)
-- [Godot Engine - Desarrollo de videojuegos](Godot/Godot%20Engine%20-%20Desarrollo%20de%20videojuegos.md)
-- [Programación](programacion/Programación.md)
+### 💻 Programación y Desarrollo
+- [[Programación]] - Conceptos generales y herramientas
+- [[GIT, Conceptos y guía]] - Control de versiones
+- [[Godot Engine - Índice y Recursos]](Godot/Godot.md) - Desarrollo de videojuegos
 
-## 🎮 Mis juegos
+### 🐧 Linux y Sistemas
+- [[Linux]] - Apuntes y tutoriales de Linux
+- [[raspberrypi/raspberrypi]] - Proyectos con Raspberry Pi
+- Docker y contenedores
 
-Algunos juegos hechos con Godot Engine, jugables directamente en el navegador:
-- [Ir a la página de juegos](/games/)
+### 🎮 Juegos y Proyectos
+- [🕹️ Mis juegos](games/) - Juegos HTML5 jugables en el navegador
+- DevLogs y progreso de aprendizaje
+
+## 🔗 Conecta conmigo
+
+- [💼 LinkedIn](https://www.linkedin.com/in/fernando-rosado-altamirano/)
+- [🐙 GitHub](https://github.com/FROSADO)
+- [📧 Contacto](about/About%20Me.md)
+
+---
+
+> [!note] Sobre este sitio
+> Este blog está construido con [Quartz](https://quartz.jzhao.xyz/) y se mantiene como un jardín digital de conocimiento. Todo el contenido está en constante evolución.
+
+*Última actualización: $(date +%Y)*
